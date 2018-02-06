@@ -35,11 +35,19 @@ class SupplierController extends Controller
 
 
     public function update(Request $request){
-      $id = $request->id;
-      $data = Supplier::find($id);
+      $data = $request->all();
+      Supplier::find($data['id'])->update($data);
       return response()->json([
         'status' => true,
         'data' => $data,
+      ]);
+    }
+
+    public function delete(Request $request){
+      $id = $request->id;
+      Supplier::find($id)->delete();
+      return response()->json([
+        'status' => true
       ]);
     }
 }

@@ -176,7 +176,7 @@
                                 </div>
                             </li>
                             <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                            <li><a href="{{route('shopping_cart')}}"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>

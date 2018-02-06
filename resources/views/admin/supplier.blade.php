@@ -41,7 +41,7 @@
 
 			<tbody>
 				@foreach($suppliers as $supplier)
-				<tr id="{{$supplier->id}}" >
+				<tr id="supplier_{{$supplier->id}}" >
 					<td>
 						{{$supplier->name}}
 					</td>
@@ -64,7 +64,7 @@
 								<i class="ace-icon fa fa-pencil bigger-130"></i>
 							</a>
 
-							<a class="red" href="#">
+							<a class="red btn_delete" href="javascript:;" onclick="deleteSupplier({{$supplier->id}})">
 								<i class="ace-icon fa fa-trash-o bigger-130"></i>
 							</a>
 						</div>
@@ -87,7 +87,7 @@
 									<li>
 										<a href="javascript:;" onclick="updateSupplier({{$supplier->id}})" class="tooltip-success" data-rel="tooltip" title="Edit">
 											<span class="green">
-											
+
 												<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
 											</span>
 										</a>
@@ -116,46 +116,51 @@
 
 <!-- Modal -->
 <div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exa	mpleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-	<form action="" method="POST" class="form-horizontal" role="form" enctype="multipart/form-data" id="formUpdate">
-		<table class="table table-hover">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exa	mpleModalLabel">Sửa Thông Tin</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
 
-			<tbody>
-				<tr class="form-field-tags">
-					<th>Tên nhà cung cấp</th>
-					<td>
-						<input type="hidden" name="id" id="idUpdate">				
-						<input type="text" name="name" id="nameUpdate">					
-					</td>
-				</tr>
+				<form action="" method="POST" class="form-horizontal" role="form" enctype="multipart/form-data" id="formUpdate">
+					<table class="table table-hover">
 
-				<tr>
-					<th>Mô tả</th>
-					<td>
-						<input type="text" name="content" id="contentUpdate">					
-					</td>
-				</tr>
-				
-			</tbody>
-		</table>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" data-dismiss="">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+						<tbody>
+							<tr class="hidden">
+								<td class="hidden">
+									<input type="hidden" name="id" id="idUpdate"></td>
+
+								</tr>
+								<tr class="form-field-tags">
+									<th>Tên nhà cung cấp</th>	
+									<td>			
+										<input type="text" name="name" id="nameUpdate">					
+									</td>
+								</tr>
+
+								<tr>
+									<th>Mô tả</th>
+									<td>
+										<input type="text" name="content" id="contentUpdate">					
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+							<button type="submit" class="btn btn-primary" data-dismiss="">Sửa</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -165,9 +170,9 @@
 <script>
 	$(document).ready(function(){
 		$.ajaxSetup({
-		    headers: {
-		        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-		    }
+			headers: {
+				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			}
 		});
 		$("#formCreate").submit(function(e){
 			e.preventDefault();
@@ -179,139 +184,235 @@
 				dataType: 'JSON',
 				data: {
 					name: name,
-				content:content
-			},
+					content:content
+				},
 				success : function(res) {
 					var data = res.data;
-					
+
 					html = '<tr>'+
 					'<td>'+
-						'<a href="#">'+data.name+'</a>'+
+					'<a href="#">'+data.name+'</a>'+
 					'</td>'+
 					'<td>'+data.content+ '</td>'+
 					'<td>'+data.content+ '</td>'+
 
 					'<td>'+
-						'<div class="hidden-sm hidden-xs action-buttons">'+
-							'<a class="blue" href="#">'+
-								'<i class="ace-icon fa fa-search-plus bigger-130"></i>'+
-							'</a>'+
+					'<div class="hidden-sm hidden-xs action-buttons">'+
+					'<a class="blue" href="#">'+
+					'<i class="ace-icon fa fa-search-plus bigger-130"></i>'+
+					'</a>'+
 
-							'<a class="green" href="#">'+
-								'<i class="ace-icon fa fa-pencil bigger-130"></i>'+
-							'</a>'+
+					'<a class="green" href="#">'+
+					'<i class="ace-icon fa fa-pencil bigger-130"></i>'+
+					'</a>'+
 
-							'<a class="red" href="#">'+
-								'<i class="ace-icon fa fa-trash-o bigger-130"></i>'+
-							'</a>'+
-						'</div>'+
+					'<a class="red" href="#">'+
+					'<i class="ace-icon fa fa-trash-o bigger-130"></i>'+
+					'</a>'+
+					'</div>'+
 
-						'<div class="hidden-md hidden-lg">'+
-							'<div class="inline pos-rel">'+
-								'<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">'+
-									'<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>'+
-								'</button>'+
+					'<div class="hidden-md hidden-lg">'+
+					'<div class="inline pos-rel">'+
+					'<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">'+
+					'<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>'+
+					'</button>'+
 
-								'<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">'+
-									'<li>'+
-										'<a href="#" class="tooltip-info" data-rel="tooltip" title="View">'+
-											'<span class="blue">'+
-												'<i class="ace-icon fa fa-search-plus bigger-120"></i>'+
-											'</span>'+
-										'</a>'+
-									'</li>'+
+					'<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">'+
+					'<li>'+
+					'<a href="#" class="tooltip-info" data-rel="tooltip" title="View">'+
+					'<span class="blue">'+
+					'<i class="ace-icon fa fa-search-plus bigger-120"></i>'+
+					'</span>'+
+					'</a>'+
+					'</li>'+
 
-								'<li>'+
-										'<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">'+
-											'<span class="green">'+
-												'<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>'+
-											'</span>'+
-										'</a>'+
-									'</li>'+
+					'<li>'+
+					'<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">'+
+					'<span class="green">'+
+					'<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>'+
+					'</span>'+
+					'</a>'+
+					'</li>'+
 
-									'<li>'+
-										'<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">'+
-											'<span class="red">'+
-												'<i class="ace-icon fa fa-trash-o bigger-120"></i>'+
-											'</span>'+
-										'</a>'+
-									'</li>'+
-								'</ul>'+
-							'</div>'+
-						'</div>'+
+					'<li>'+
+					'<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">'+
+					'<span class="red">'+
+					'<i class="ace-icon fa fa-trash-o bigger-120"></i>'+
+					'</span>'+
+					'</a>'+
+					'</li>'+
+					'</ul>'+
+					'</div>'+
+					'</div>'+
 					'</td>'+
-				'</tr>';
-				var flag = $('.flag');
-				$(html).insertAfter(flag);
-				toastr.success('Thêm mới thành công !');
+					'</tr>';
+					var flag = $('.flag');
+					$(html).insertAfter(flag);
+					toastr.success('Thêm mới thành công !');
 				}
 			})
 		});
 	});
-	
+
 </script>
 
 <script type="text/javascript">
 	function updateSupplier(id){
 		$('#update').modal('show');
 		$.ajaxSetup({
-		    headers: {
-		        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-		    }
+			headers: {
+				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			}
 		});
 
-			event.preventDefault();
-			var name = $('#name').val();
-			var content = $('#content').val();
-			$.ajax({
-				url: '{{ route('edit_supplier')}}',
-				type: 'POST',
-				dataType: 'JSON',
-				data: {id : id},
-				success:function(res){
-					var data = res.data;
-				
-					$('#nameUpdate').val(data.name)
-					$('#contentUpdate').val(data.content)
-					$('#idUpdate').val(data.id)
-				}
-			});
-			
+		event.preventDefault();
+		var name = $('#name').val();
+		var content = $('#content').val();
+		$.ajax({
+			url: '{{ route('edit_supplier')}}',
+			type: 'POST',
+			dataType: 'JSON',
+			data: {id : id},
+			success:function(res){
+				var data = res.data;
+
+				$('#nameUpdate').val(data.name)
+				$('#contentUpdate').val(data.content)
+				$('#idUpdate').val(data.id)
+			}
+		});
+
 	}
+
 </script>
 
 <script>
 	$(document).ready(function(){
 		$.ajaxSetup({
-		    headers: {
-		        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-		    }
+			headers: {
+				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			}
 		});
-		$('#formUpdate').submit(function(event) {
-			event.preventDefault();
-			var name = $('#name').val();
-			var content = $('#content').val();
-			var id = $('#id').val();
+		$("#formUpdate").submit(function(e){
+			e.preventDefault();
+			var id = $('#idUpdate').val();
+			var name = $('#nameUpdate').val();
+			var content = $('#contentUpdate').val();
+			console.log(id);
 			$.ajax({
-				url: '{{route ('update_supplier')}}',
+				url: '{{route('update_supplier')}}',
 				type: 'POST',
 				dataType: 'JSON',
 				data: {
-					name: name,
-					content: content,
 					id: id,
+					name: name,
+					content:content
 				},
-				success:function(res){
+				success : function(res) {
 					var data = res.data;
-					console.log(data);
-					toastr.success('Sửa thành công !');
+
+					html =
+					'<td>'+
+					'<a href="#">'+data.name+'</a>'+
+					'</td>'+
+					'<td>'+data.content+ '</td>'+
+					'<td>'+data.content+ '</td>'+
+
+					'<td>'+
+					'<div class="hidden-sm hidden-xs action-buttons">'+
+					'<a class="blue" href="#">'+
+					'<i class="ace-icon fa fa-search-plus bigger-130"></i>'+
+					'</a>'+
+
+					'<a class="green" href="#">'+
+					'<i class="ace-icon fa fa-pencil bigger-130"></i>'+
+					'</a>'+
+
+					'<a class="red" href="#">'+
+					'<i class="ace-icon fa fa-trash-o bigger-130"></i>'+
+					'</a>'+
+					'</div>'+
+
+					'<div class="hidden-md hidden-lg">'+
+					'<div class="inline pos-rel">'+
+					'<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">'+
+					'<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>'+
+					'</button>'+
+
+					'<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">'+
+					'<li>'+
+					'<a href="#" class="tooltip-info" data-rel="tooltip" title="View">'+
+					'<span class="blue">'+
+					'<i class="ace-icon fa fa-search-plus bigger-120"></i>'+
+					'</span>'+
+					'</a>'+
+					'</li>'+
+
+					'<li>'+
+					'<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">'+
+					'<span class="green">'+
+					'<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>'+
+					'</span>'+
+					'</a>'+
+					'</li>'+
+
+					'<li>'+
+					'<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">'+
+					'<span class="red">'+
+					'<i class="ace-icon fa fa-trash-o bigger-120"></i>'+
+					'</span>'+
+					'</a>'+
+					'</li>'+
+					'</ul>'+
+					'</div>'+
+					'</div>'+
+					'</td>';
+
+					$('#supplier_' + data.id).html(html);
+					toastr.success('Thêm mới thành công !');
 				}
 			})
-			
 		});
-	})
+	});
+
 </script>
-	
+
+<script type="text/javascript">
+	function deleteSupplier(id){
+		$('.btn_delete').click(function(){
+			// alert('aaa');
+			swal({
+				title: "Bạn có muốn xóa không?",
+				type: "warning",
+				showCancelButton: true,
+				confirmButtonColor: "#DD6B55",
+				confirmButtonText: "Có",
+				cancelButtonText: "Không",
+					// closeOnConfirm: false
+				},
+
+
+				function($id){
+					event.preventDefault();
+					console.log(id);
+					$.ajax({
+						url: '{{ route('delete_supplier')}}',
+						type: 'POST',
+						dataType: 'JSON',
+						data: {id : id},
+
+						success:function(res){
+							swal("Delete!", "Bạn đã xóa thành công");
+
+							toastr.success('Bạn đã xóa thành công!');
+							$('#supplier_'+id).remove();
+						}
+					});
+
+				});
+		});
+	}
+</script>
 
 @endsection
 

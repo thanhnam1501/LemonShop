@@ -47,11 +47,19 @@ Route::prefix('admin')->group(function(){
 		//show danh mục sản phẩm
 		Route::get('them-danh-muc-san-pham', 'CatalogController@show')->name('show_catalog');
 		Route::post('them-danh-muc-san-pham', 'CatalogController@store')->name('add_catalog');
+		Route::post('sua-danh-muc-san-pham', 'CatalogController@edit')->name('edit_catalog');
+		Route::post('update-danh-muc-san-pham', 'CatalogController@update')->name('update_catalog');
+		Route::post('xoa-danh-muc-san-pham', 'CatalogController@delete')->name('delete_catalog');
 		//Xử lý chức năng nhà cung câp
-		Route::get('nha-cung-cap', 'SupplierController@show')->name('show_supplier');
-		Route::post('them-moi-nha-cung-cap', 'SupplierController@store')->name('add_supplier');
-		Route::post('sua-nha-cung-cap', 'SupplierController@edit')->name('edit_supplier');
-		Route::post('update-nha-cung-cap', 'SupplierController@update')->name('update_supplier');
+			Route::get('nha-cung-cap', 'SupplierController@show')->name('show_supplier');
+
+			Route::post('them-moi-nha-cung-cap', 'SupplierController@store')->name('add_supplier');
+
+			Route::post('sua-nha-cung-cap', 'SupplierController@edit')->name('edit_supplier');
+
+			Route::post('update-nha-cung-cap', 'SupplierController@update')->name('update_supplier');
+
+			Route::post('xoa-nha-cung-cap', 'SupplierController@delete')->name('delete_supplier');
 		
 	});
 
@@ -65,4 +73,10 @@ Route::prefix('admin')->group(function(){
 	});
 });
 
+Route::get('/checkout', 'CartController@getCheckOut');
+Route::post('/checkout', 'CartController@postCheckOut');
+
+Route::get('xem-gio-hang', function(){
+	return view('shopping-cart');
+})->name('shopping_cart');
 Auth::routes();

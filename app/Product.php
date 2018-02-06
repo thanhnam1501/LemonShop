@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    protected $fillable=['id','catalog_id','name','price','image_link','image_list','content','sotr_content','discount','view','slug','status','qty_sold','price_discount','user_id','created_at','updated_at'];
+    protected $fillable=['id','catalog_id','name','price','image_link','image_list','content','sort_content','discount','view','slug','status','qty_sold','price_discount','user_id','created_at','updated_at'];
     public function Catalog(){
     	return $this->belongsto("App/Catalog");
     }

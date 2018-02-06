@@ -1,6 +1,7 @@
 @extends('layout.AdminHeader')
 @section('content')
 
+  <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
 
 
 <form action="{{route('add_product')}}" method="POST" class="form-horizontal" role="form" enctype="multipart/form-data">
@@ -42,15 +43,15 @@
 
 				<tr>
 					<td>
-							<h4>Mô tả ngắn cho sản phẩm</h4> <br>
-							<textarea class="wysiwyg-editor" style="width: 100%" name="sort_content" value=""></textarea>
+							<h4>Mô tả ngắn cho sản phẩm</h4><br>
+							<textarea class="wysiwyg-editor" style="width: 100%" name="sort_content" value="" id="sort_content"></textarea>
 					</td>
 				</tr>
 
 				<tr>
 					<td>
 							<h4>Mô tả chi tiết cho sản phẩm</h4><br>
-							<textarea class="wysiwyg-editor" style="width: 100%" name="content" value=""></textarea>
+							<textarea class="wysiwyg-editor" style="width: 100%" name="content" id="content" value=""></textarea>
 					</td>
 				</tr>
 
@@ -836,5 +837,10 @@
 				});
 
 			});
+		</script>
+		<script type="text/javascript">
+			CKEDITOR.replace('sort_content');
+			CKEDITOR.replace('content');
+
 		</script>
 		@endsection

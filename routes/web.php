@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-	return view('home');
-});
+Route::get('/', 'FrontController@index');
 
 Route::get('gio-hang', function(){
 	return view('shopping-cart');
@@ -76,7 +74,5 @@ Route::prefix('admin')->group(function(){
 Route::get('/checkout', 'CartController@getCheckOut');
 Route::post('/checkout', 'CartController@postCheckOut');
 
-Route::get('xem-gio-hang', function(){
-	return view('shopping-cart');
-})->name('shopping_cart');
+Route::post('/cart', 'CartController@cart')->name('shopping_cart');
 Auth::routes();

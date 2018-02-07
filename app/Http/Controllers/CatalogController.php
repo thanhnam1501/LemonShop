@@ -8,7 +8,7 @@ use App\Catalog;
 class CatalogController extends Controller
 {
     public function show(){
-     $catalogies =	Catalog::orderBy('id','DESC')->get()->all()  ;
+     $catalogies =	Catalog::orderBy('id','DESC')->get()->all();
      return view('admin\catalog', ['catalogies' => $catalogies]);
     }
 

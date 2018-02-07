@@ -14,6 +14,7 @@ class ProductController extends Controller
             $path = $request->file('image_link')->store('image_link');
             $data['image_link'] = $path;
         };
+        // dd($data);
     Product::create($data);
     return redirect()->route('show_product');
     }

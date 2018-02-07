@@ -34,8 +34,8 @@
 															Ngày Đăng
 														</th>
 														<th class="hidden-480">Chế độ</th>
-
-														<th></th>
+														<th>content</th>
+														<th>sort_content</th>
 													</tr>
 												</thead>
 
@@ -65,6 +65,9 @@
 																@endif
 															</span>
 														</td>
+														<td>{!!$product->content!!}</td>
+														<td>{!!$product->sort_content!!}</td>
+
 
 														<td>
 															<div class="hidden-sm hidden-xs action-buttons">

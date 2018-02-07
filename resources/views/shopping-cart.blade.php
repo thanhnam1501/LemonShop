@@ -424,6 +424,7 @@
             <div class="container">
                 <div class="row wv-pads15">
                     <div class="table-responsive table-content">
+                        @if(count($cart))
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -436,17 +437,18 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                 @foreach($cart as $item)
                                 <tr>
-                                    <td><a href="#"><img src="img/product/cart1.jpg" alt="cart"></a></td>
-                                    <td class="cart-product-title"><a href="#">Lorem Women dress</a></td>
-                                    <td class="cart-product-price"><span>$16.51</span></td>
+                                    <td><a href=""><img src="{{ asset('image_link') }}/home/product1.jpg" alt=""></a></td>
+                                    <td class="cart-product-title"><a href="#">{{$item->name}}</a></td>
+                                    <td class="cart-product-price"><span>{{ number_format($item->price)}} VNĐ</span></td>
                                     <td class="p-qty">
                                         <input class="quantity_field" value="1" type="number" min="2" max="20" step="1" data-min="1"/>
                                     </td>
-                                    <td class="cart-product-price"><span>$16.51</span></td>
+                                    <td class="cart-product-price"><span>{{ number_format($item->subtotal)}} VNĐ</span></td>
                                     <td class="delete-products"><a href="#"><i class="fa fa-times"></i></a></td>
                                 </tr>
-                                <tr>
+                  {{--               <tr>
                                     <td><a href="#"><img src="img/product/cart2.jpg" alt="cart"></a></td>
                                     <td class="cart-product-title"><a href="#">Lorem Women dress</a></td>
                                     <td class="cart-product-price"><span>$50.99</span></td>
@@ -465,7 +467,11 @@
                                     </td>
                                     <td class="cart-product-price"><span>$50.99</span></td>
                                     <td class="delete-products"><a href="#"><i class="fa fa-times"></i></a></td>
-                                </tr>
+                                </tr> --}}
+                                 @endforeach
+                    @else
+                     <p>You have no items in the shopping cart</p>
+                @endif
                             </tbody>
                         </table>
                     </div>

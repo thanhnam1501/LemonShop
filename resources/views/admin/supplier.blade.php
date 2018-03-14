@@ -77,7 +77,7 @@
 
 								<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
 									<li>
-										<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
+										<a  class="tooltip-info" data-rel="tooltip" title="View">
 											<span class="blue">
 												<i class="ace-icon fa fa-search-plus bigger-120"></i>
 											</span>
@@ -94,7 +94,7 @@
 									</li>
 
 									<li>
-										<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
+										<a class="red btn_delete tooltip-error" href="javascript:;" onclick="deleteSupplier({{$supplier->id}})" data-rel="tooltip" title="Delete">
 											<span class="red">
 												<i class="ace-icon fa fa-trash-o bigger-120"></i>
 											</span>
@@ -105,14 +105,13 @@
 						</div>
 					</td>
 				</tr>
-
-
-
+				@endforeach
 			</tbody>
-			@endforeach
-		</tbody>
-	</table>
+		</table>
+	</div>
 </div>
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -164,222 +163,207 @@
 
 
 
-@endsection
+	@endsection
 
-@section('script')
-<script>
-	$(document).ready(function(){
-		$.ajaxSetup({
-			headers: {
-				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-			}
+	@section('script')
+	<script src="{{asset('/js/admin/jquery.dataTables.min.js')}}"></script>
+	<script src="{{asset('/js/admin/jquery.dataTables.bootstrap.min.js')}}"></script>
+	<script src="{{asset('/js/admin/dataTables.buttons.min.js')}}"></script>
+	<script src="{{asset('/js/admin/dataTables.select.min.js')}}"></script>
+
+
+	<script>
+		$(document).ready(function(){
+			$.ajaxSetup({
+				headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				}
+			});
+			$("#formCreate").submit(function(e){
+				e.preventDefault();
+				var name = $('#name').val();
+				var content = $('#content').val();
+
+				$.ajax({
+					url: '{{route('add_supplier')}}',
+					type: 'POST',
+					dataType: 'JSON',
+					data: {
+						name: name,
+						content:content
+					},
+					success : function(res) {
+						var data = res.data;
+						console.log(data);
+						html = '<tr id = "supplier_'+data.id+'">'+
+						'<td>'+
+						'<a href="#">'+data.name+'</a>'+
+						'</td>'+
+						'<td>'+data.content+ '</td>'+
+						'<td>'+data.content+ '</td>'+
+						'<td>'+
+						'<div class="hidden-sm hidden-xs action-buttons">'+
+						'<a class="blue" href="#">'+
+						'<i class="ace-icon fa fa-search-plus bigger-130"></i>'+
+						'</a>'+
+						'<a class="green" href="javascript:;" onclick="updateSupplier('+data.id+')">'+
+						'<i class="ace-icon fa fa-pencil bigger-130"></i>'+
+						'</a>'+
+						'	<a class="red btn_delete" href="javascript:;" onclick="deleteSupplier('+data.id+')">'+
+						'<i class="ace-icon fa fa-trash-o bigger-130"></i>'+
+						'</a>'+
+						'</div>'+
+						'<div class="hidden-md hidden-lg">'+
+						'<div class="inline pos-rel">'+
+						'<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">'+
+						'<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>'+
+						'</button>'+
+						'<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">'+
+						'<li>'+
+						'<a href="#" class="tooltip-info" data-rel="tooltip" title="View">'+
+						'<span class="blue">'+
+						'<i class="ace-icon fa fa-search-plus bigger-120"></i>'+
+						'</span>'+
+						'</a>'+
+						'</li>'+
+						'<li>'+
+						'<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">'+
+						'<span class="green">'+
+						'<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>'+
+						'</span>'+
+						'</a>'+
+						'</li>'+
+						'<li>'+
+						'<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">'+
+						'<span class="red">'+
+						'<i class="ace-icon fa fa-trash-o bigger-120"></i>'+
+						'</span>'+
+						'</a>'+
+						'</li>'+
+						'</ul>'+
+						'</div>'+
+						'</div>'+
+						'</td>'+
+						'</tr>';
+						var flag = $('.flag');
+						$(html).insertAfter(flag);
+						toastr.success('Thêm mới thành công !');
+					}
+				})
+			});
 		});
-		$("#formCreate").submit(function(e){
-			e.preventDefault();
+	</script>
+
+	<script type="text/javascript">
+		function updateSupplier(id){
+			$('#update').modal('show');
+			$.ajaxSetup({
+				headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				}
+			});
+			event.preventDefault();
 			var name = $('#name').val();
 			var content = $('#content').val();
 			$.ajax({
-				url: '{{route('add_supplier')}}',
+				url: '{{ route('edit_supplier')}}',
 				type: 'POST',
 				dataType: 'JSON',
-				data: {
-					name: name,
-					content:content
-				},
-				success : function(res) {
+				data: {id : id},
+				success:function(res){
 					var data = res.data;
-
-					html = '<tr>'+
-					'<td>'+
-					'<a href="#">'+data.name+'</a>'+
-					'</td>'+
-					'<td>'+data.content+ '</td>'+
-					'<td>'+data.content+ '</td>'+
-
-					'<td>'+
-					'<div class="hidden-sm hidden-xs action-buttons">'+
-					'<a class="blue" href="#">'+
-					'<i class="ace-icon fa fa-search-plus bigger-130"></i>'+
-					'</a>'+
-
-					'<a class="green" href="#">'+
-					'<i class="ace-icon fa fa-pencil bigger-130"></i>'+
-					'</a>'+
-
-					'<a class="red" href="#">'+
-					'<i class="ace-icon fa fa-trash-o bigger-130"></i>'+
-					'</a>'+
-					'</div>'+
-
-					'<div class="hidden-md hidden-lg">'+
-					'<div class="inline pos-rel">'+
-					'<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">'+
-					'<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>'+
-					'</button>'+
-
-					'<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">'+
-					'<li>'+
-					'<a href="#" class="tooltip-info" data-rel="tooltip" title="View">'+
-					'<span class="blue">'+
-					'<i class="ace-icon fa fa-search-plus bigger-120"></i>'+
-					'</span>'+
-					'</a>'+
-					'</li>'+
-
-					'<li>'+
-					'<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">'+
-					'<span class="green">'+
-					'<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>'+
-					'</span>'+
-					'</a>'+
-					'</li>'+
-
-					'<li>'+
-					'<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">'+
-					'<span class="red">'+
-					'<i class="ace-icon fa fa-trash-o bigger-120"></i>'+
-					'</span>'+
-					'</a>'+
-					'</li>'+
-					'</ul>'+
-					'</div>'+
-					'</div>'+
-					'</td>'+
-					'</tr>';
-					var flag = $('.flag');
-					$(html).insertAfter(flag);
-					toastr.success('Thêm mới thành công !');
+					$('#nameUpdate').val(data.name)
+					$('#contentUpdate').val(data.content)
+					$('#idUpdate').val(data.id)
 				}
-			})
-		});
-	});
+			});
+		}
+	</script>
 
-</script>
-
-<script type="text/javascript">
-	function updateSupplier(id){
-		$('#update').modal('show');
-		$.ajaxSetup({
-			headers: {
-				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-			}
-		});
-
-		event.preventDefault();
-		var name = $('#name').val();
-		var content = $('#content').val();
-		$.ajax({
-			url: '{{ route('edit_supplier')}}',
-			type: 'POST',
-			dataType: 'JSON',
-			data: {id : id},
-			success:function(res){
-				var data = res.data;
-
-				$('#nameUpdate').val(data.name)
-				$('#contentUpdate').val(data.content)
-				$('#idUpdate').val(data.id)
-			}
-		});
-
-	}
-
-</script>
-
-<script>
-	$(document).ready(function(){
-		$.ajaxSetup({
-			headers: {
-				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-			}
-		});
-		$("#formUpdate").submit(function(e){
-			e.preventDefault();
-			var id = $('#idUpdate').val();
-			var name = $('#nameUpdate').val();
-			var content = $('#contentUpdate').val();
-			console.log(id);
-			$.ajax({
-				url: '{{route('update_supplier')}}',
-				type: 'POST',
-				dataType: 'JSON',
-				data: {
-					id: id,
-					name: name,
-					content:content
-				},
-				success : function(res) {
-					var data = res.data;
-
-					html =
-					'<td>'+
-					'<a href="#">'+data.name+'</a>'+
-					'</td>'+
-					'<td>'+data.content+ '</td>'+
-					'<td>'+data.content+ '</td>'+
-
-					'<td>'+
-					'<div class="hidden-sm hidden-xs action-buttons">'+
-					'<a class="blue" href="#">'+
-					'<i class="ace-icon fa fa-search-plus bigger-130"></i>'+
-					'</a>'+
-
-					'<a class="green" href="#">'+
-					'<i class="ace-icon fa fa-pencil bigger-130"></i>'+
-					'</a>'+
-
-					'<a class="red" href="#">'+
-					'<i class="ace-icon fa fa-trash-o bigger-130"></i>'+
-					'</a>'+
-					'</div>'+
-
-					'<div class="hidden-md hidden-lg">'+
-					'<div class="inline pos-rel">'+
-					'<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">'+
-					'<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>'+
-					'</button>'+
-
-					'<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">'+
-					'<li>'+
-					'<a href="#" class="tooltip-info" data-rel="tooltip" title="View">'+
-					'<span class="blue">'+
-					'<i class="ace-icon fa fa-search-plus bigger-120"></i>'+
-					'</span>'+
-					'</a>'+
-					'</li>'+
-
-					'<li>'+
-					'<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">'+
-					'<span class="green">'+
-					'<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>'+
-					'</span>'+
-					'</a>'+
-					'</li>'+
-
-					'<li>'+
-					'<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">'+
-					'<span class="red">'+
-					'<i class="ace-icon fa fa-trash-o bigger-120"></i>'+
-					'</span>'+
-					'</a>'+
-					'</li>'+
-					'</ul>'+
-					'</div>'+
-					'</div>'+
-					'</td>';
-
-					$('#supplier_' + data.id).html(html);
-					toastr.success('Thêm mới thành công !');
+	<script>
+		$(document).ready(function(){
+			$.ajaxSetup({
+				headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 				}
-			})
+			});
+			$("#formUpdate").submit(function(e){
+				e.preventDefault();
+				var id = $('#idUpdate').val();
+				var name = $('#nameUpdate').val();
+				var content = $('#contentUpdate').val();
+				console.log(id);
+				$.ajax({
+					url: '{{route('update_supplier')}}',
+					type: 'POST',
+					dataType: 'JSON',
+					data: {
+						id: id,
+						name: name,
+						content:content
+					},
+					success : function(res) {
+						var data = res.data;
+						html =
+						'<td>'+
+						'<a href="#">'+data.name+'</a>'+
+						'</td>'+
+						'<td>'+data.content+ '</td>'+
+						'<td>'+data.content+ '</td>'+
+						'<td>'+
+						'<div class="hidden-sm hidden-xs action-buttons">'+
+						'<a class="blue" href="#">'+
+						'<i class="ace-icon fa fa-search-plus bigger-130"></i>'+
+						'</a>'+
+						'<a class="green" href="javascript:;" onclick="updateSupplier('+data.id+')">'+
+						'<i class="ace-icon fa fa-pencil bigger-130"></i>'+
+						'</a>'+
+						'	<a class="red btn_delete" href="javascript:;" onclick="deleteSupplier('+data.id+')">'+
+						'<i class="ace-icon fa fa-trash-o bigger-130"></i>'+
+						'</a>'+
+						'</div>'+
+						'<div class="hidden-md hidden-lg">'+
+						'<div class="inline pos-rel">'+
+						'<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">'+
+						'<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>'+
+						'</button>'+
+						'<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">'+
+						'<li>'+
+						'<a href="#" class="tooltip-info" data-rel="tooltip" title="View">'+
+						'<span class="blue">'+
+						'<i class="ace-icon fa fa-search-plus bigger-120"></i>'+
+						'</span>'+
+						'</a>'+
+						'</li>'+
+						'<li>'+
+						'<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">'+
+						'<span class="green">'+
+						'<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>'+
+						'</span>'+
+						'</a>'+
+						'</li>'+
+						'<li>'+
+						'<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">'+
+						'<span class="red">'+
+						'<i class="ace-icon fa fa-trash-o bigger-120"></i>'+
+						'</span>'+
+						'</a>'+
+						'</li>'+
+						'</ul>'+
+						'</div>'+
+						'</div>'+
+						'</td>';
+						$('#supplier_' + data.id).html(html);
+						toastr.success('Sửa thành công !');
+					}
+				})
+			});
 		});
-	});
+	</script>
 
-</script>
-
-<script type="text/javascript">
-	function deleteSupplier(id){
-		$('.btn_delete').click(function(){
+	<script type="text/javascript">
+		function deleteSupplier(id){
+			$('.btn_delete').click(function(){
 			// alert('aaa');
 			swal({
 				title: "Bạn có muốn xóa không?",
@@ -390,8 +374,6 @@
 				cancelButtonText: "Không",
 					// closeOnConfirm: false
 				},
-
-
 				function($id){
 					event.preventDefault();
 					console.log(id);
@@ -400,20 +382,16 @@
 						type: 'POST',
 						dataType: 'JSON',
 						data: {id : id},
-
 						success:function(res){
 							swal("Delete!", "Bạn đã xóa thành công");
-
 							toastr.success('Bạn đã xóa thành công!');
 							$('#supplier_'+id).remove();
 						}
 					});
-
 				});
 		});
-	}
-</script>
+		}
 
-@endsection
+	</script>
 
-
+	@endsection

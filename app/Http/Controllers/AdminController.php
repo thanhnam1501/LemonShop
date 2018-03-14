@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use App\Admin;
 class AdminController extends Controller
 {
     /**
@@ -19,6 +20,11 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin/admin');
+        return view('admin/dashboard');
+    }
+    public function show()
+    {
+        $admins= Admin::get();
+        return view('admin/admin', ['admins' => $admins]);
     }
 }

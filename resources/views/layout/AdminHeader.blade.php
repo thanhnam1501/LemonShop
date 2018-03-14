@@ -443,7 +443,7 @@
 							</li>
 
 							<li class="">
-								<a href="typography.html">
+								<a href="{{route ('admin.show')}}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Quản trị viên
 								</a>

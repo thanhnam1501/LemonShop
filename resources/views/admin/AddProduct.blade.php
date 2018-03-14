@@ -1,185 +1,113 @@
-@extends('layout.AdminHeader')
+@extends('layout.app')
 @section('content')
-
-  <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
-
 
 <form action="{{route('add_product')}}" method="POST" class="form-horizontal" role="form" enctype="multipart/form-data">
 	<table class="table table-hover">
 		<tbody>
 			<tr>
 				<td>
+					<input type="hidden" name="id" value="">
 					<h3>Thêm sản phẩm mới</h3>
 					<div class="form-group">
 						<div class="col-sm-9" >
 							<input type="text" class="form-control" placeholder="Tên Sản Phẩm" name="name"  />
 						</div>
 					</div>
-				{{-- 	<div class="form-group" style="margin-left: 3%">
+{{-- 					<div class="form-group" style="margin-left: 3%">
 						Liên kết tĩnh: <a>http://lemonshop.com/san-pham/
-							<input name="slug" type="text" placeholder="{{str_slug = }}" /></a>
-						</div>
-					</td> --}}
-				</tr>
-
-				<tr>
-					<td>
-							<div style="float: left;">
-								<h4 style="float: left;">Giá sản phẩm: &nbsp; &nbsp; </h4>
-								<input type="text" name="price" value="">
-							</div>
-
-
-						</div>
-					</td>
-					<td>
-							<div style="">
-								<h4 style="float: left;">Giá khuyến mại: &nbsp; &nbsp;</h4>
-								<input type="text" name="price_discount" value="">
-							</div>
-						</div>
-					</td>
-				</tr>
-
-				<tr>
-					<td>
-							<h4>Mô tả ngắn cho sản phẩm</h4><br>
-							<textarea class="wysiwyg-editor" style="width: 100%" name="sort_content" value="" id="sort_content"></textarea>
-					</td>
-				</tr>
-
-				<tr>
-					<td>
-							<h4>Mô tả chi tiết cho sản phẩm</h4><br>
-							<textarea class="wysiwyg-editor" style="width: 100%" name="content" id="content" value=""></textarea>
-					</td>
-				</tr>
-
-				<tr>
-					<td>
-
-						<div class="col-sm-4">
-							<div class="widget-box">
-								<div class="widget-header">
-									<h4 class="widget-title">Ảnh sản phẩm</h4>
-								</div>
-								<div class="widget-body">
-									<div class="widget-main">
-										<div class="form-group">
-											<div class="col-xs-12">
-												<label class="ace-file-input ace-file-multiple">
-													<input type="file" id="id-input-file-3" name="image_link">
-													<a class="remove" href="#">
-														<i class=" ace-icon fa fa-times"> </i>
-													</a>
-												</label>
-											</div>
-										</div>						
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</td>
-				</tr>
-
-				<tr>
-					<td>
-
-						<div>
-							<h4>Danh mục sản phẩm</h4>
-							<select name="catalog_id">
-								<option>1</option>
-							</select>
-						</div>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-
-		{{csrf_field()}}
-
-		<button type="submit" class="btn btn-primary">Đăng Bài Viết</button>
-	</form>
-
-	{{-- 	<div class="col-xs-12 col-sm-4">
-			<div class="widget-box">
-				<div class="widget-header">
-					<h4 class="widget-title">Mô tả ngắn cho sản phẩm</h4>
-
-					<div class="widget-toolbar">
-						<a href="#" data-action="collapse">
-							<i class="ace-icon fa fa-chevron-up"></i>
 						</a>
+					</div> --}}
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div style="float: left;">
+						<h4 style="float: left;">Giá sản phẩm: &nbsp; &nbsp; </h4>
+						<input type="text" name="price" value="">
 					</div>
+
+
 				</div>
-
-				<div class="widget-body">
-					<div class="widget-main">
-						<div>
-							<div class="wysiwyg-editor" id="editor1" contenteditable="true" value="sort_content"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		{{-- Mô tả sản phẩm --}}
-
-		{{-- <div class="col-xs-12 col-sm-4 form-group">
-			<div class="widget-box">
-				<div class="widget-header">
-					<h4 class="widget-title">Mô tả chi tiết cho sản phẩm</h4>
-
-					<div class="widget-toolbar">
-						<a href="#" data-action="collapse">
-							<i class="ace-icon fa fa-chevron-up"></i>
-						</a>
-					</div>
-				</div>
-
-				<div class="widget-body">
-					<div class="widget-main">
-						<div>
-							<div class="wysiwyg-editor" id="editor1" contenteditable="true" value="content" ></div>
-						</div>
-					</div>
+			</td>
+			<td>
+				<div style="">
+					<h4 style="float: left;">Giá khuyến mại: &nbsp; &nbsp;</h4>
+					<input type="text" name="price_discount" value="">
 				</div>
 			</div>
-		</div>
-		<div class="col-xs-12 col-sm-4 form-group">
-			<div class="widget-box">
+		</td>
+	</tr>
 
-				<div class="widget-body">
-					<div class="widget-main">
-						<div>
+	<tr>
+		<td>
+			<h4>Mô tả ngắn cho sản phẩm</h4><br>
+			<textarea class="wysiwyg-editor" style="width: 100%" name="sort_content" value="" id="sort_content"></textarea>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<h4>Mô tả chi tiết cho sản phẩm</h4><br>
+			<textarea class="wysiwyg-editor" style="width: 100%" name="content" id="content" value=""></textarea>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+
+			<div class="col-sm-4">
+				<div class="widget-box">
+					<div class="widget-header">
+						<h4 class="widget-title">Ảnh sản phẩm</h4>
+					</div>
+					<div class="widget-body">
+						<div class="widget-main">
 							<div class="form-group">
-								<label>Giá Sản Phẩm</label>
-								<input type="" name="" value="price">
-							</div>
-							<div class="form-group">
-								<label>Giá Sản Phẩm</label>
-								<input type="" name="" value="di">
-							</div>
+								<div class="col-xs-12">
+									<label class="ace-file-input ace-file-multiple">
+										<input type="file" id="id-input-file-3" name="image_link">
+										<a class="remove" href="#">
+											<i class=" ace-icon fa fa-times"> </i>
+										</a>
+									</label>
+								</div>
+							</div>						
 						</div>
 					</div>
 				</div>
 			</div>
-		</div> --}}
+
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+
+			<div>
+
+				<h4>Danh mục sản phẩm</h4>
+				<select name="catalog_id">
+					@foreach($catalogs as $catalog)
+					<option value="{{$catalog->id}}">{{$catalog -> name}}</option>
+					@endforeach
+				</select>
+
+			</div>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+{{csrf_field()}}
+
+<button type="submit" class="btn btn-primary">Đăng Bài Viết</button>
+</form>
 
 
-		@endsection
-		@section('footer')
-		<script src="{{asset('js/admin/jquery-2.1.4.min.js')}}"></script>
+@endsection
+@section('script')
 
-		<!-- <![endif]-->
-
-		<!--[if IE]>
-<script src="assets/js/jquery-1.11.3.min.js"></script>
-<![endif]-->
-<script type="text/javascript">
-	if('ontouchstart' in document.documentElement) document.write("<script src='{{asset('js/jquery.mobile.custom.min.js')}})>"+"<"+"/script>");
-</script>
-<script src="{{asset('/js/bootstrap.min.js')}}"></script>
 
 <!-- page specific plugin scripts -->
 
@@ -202,18 +130,7 @@
 		<script src="{{asset('js/admin/jquery.maskedinput.min.js')}}"></script>
 		<script src="{{asset('js/admin/bootstrap-tag.min.js')}}"></script>
 
-		<!-- ace scripts -->
-		<script src="{{asset('js/admin/ace-elements.min.js')}}"></script>
-		<script src="{{asset('js/admin/ace.min.js')}}"></script>
 
-		<!-- page specific plugin scripts -->
-		<script src="{{asset('js/admin/jquery-ui.custom.min.js')}}"></script>
-		<script src="{{asset('js/admin/jquery.ui.touch-punch.min.js')}}"></script>
-		<script src="{{asset('js/admin/markdown.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootstrap-markdown.min.js')}}"></script>
-		<script src="{{asset('js/admin/jquery.hotkeys.index.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootstrap-wysiwyg.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootbox.js')}}"></script>
 
 		<!-- ace scripts -->
 		

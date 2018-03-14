@@ -11,11 +11,8 @@
 |
 */
 
-Route::get('/', 'FrontController@index');
+Route::get('/', 'FrontController@index')->name('home');
 
-Route::get('gio-hang', function(){
-	return view('shopping-cart');
-})->name('cart');
 
 Route::get('dang-nhap', function(){
 	return view('login');
@@ -25,7 +22,9 @@ Route::prefix('admin')->group(function(){
 	Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
     Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 
-    Route::get('/logout', 'Auth\AdminLoginController@ogout')->name('admin.logout');
+    Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
+
+    Route::get('/quan-tri-vien', 'AdminController@show')->name('admin.show');
 
     Route::get('/test', function(){
     	return view('admin/test');
@@ -37,26 +36,23 @@ Route::prefix('admin')->group(function(){
 	/* Các route về sản phẩm*/
 	Route::prefix('san-pham')->group(function(){
 		//Xử lý chức năng cho sản phẩm
-		Route::get('/', 'ProductController@show')->name('show_product');
-		//show form thêm sản phẩm
-		Route::get('them-san-pham', function() {return view('admin\AddProduct');})->name('form_add_product');
-		//xử lý thêm sản phẩm
-		Route::post('them-san-pham', 'ProductController@store')->name('add_product');
-		//show danh mục sản phẩm
-		Route::get('them-danh-muc-san-pham', 'CatalogController@show')->name('show_catalog');
-		Route::post('them-danh-muc-san-pham', 'CatalogController@store')->name('add_catalog');
-		Route::post('sua-danh-muc-san-pham', 'CatalogController@edit')->name('edit_catalog');
-		Route::post('update-danh-muc-san-pham', 'CatalogController@update')->name('update_catalog');
-		Route::post('xoa-danh-muc-san-pham', 'CatalogController@delete')->name('delete_catalog');
+			Route::get('/', 'ProductController@show')->name('show_product');
+			Route::get('them-san-pham', 'ProductController@getAddProduct')->name('form_add_product');
+			Route::post('them-san-pham', 'ProductController@store')->name('add_product');
+			Route::post('sua-san-pham','ProductController@edit')->name('edit.product');
+		
+		//xủ lý chức năng danh mục sản phẩm
+			Route::get('them-danh-muc-san-pham', 'CatalogController@show')->name('show_catalog');
+			Route::post('them-danh-muc-san-pham', 'CatalogController@store')->name('add_catalog');
+			Route::post('sua-danh-muc-san-pham', 'CatalogController@edit')->name('edit_catalog');
+			Route::post('update-danh-muc-san-pham', 'CatalogController@update')->name('update_catalog');
+			Route::post('xoa-danh-muc-san-pham', 'CatalogController@delete')->name('delete_catalog');
+		
 		//Xử lý chức năng nhà cung câp
 			Route::get('nha-cung-cap', 'SupplierController@show')->name('show_supplier');
-
 			Route::post('them-moi-nha-cung-cap', 'SupplierController@store')->name('add_supplier');
-
 			Route::post('sua-nha-cung-cap', 'SupplierController@edit')->name('edit_supplier');
-
 			Route::post('update-nha-cung-cap', 'SupplierController@update')->name('update_supplier');
-
 			Route::post('xoa-nha-cung-cap', 'SupplierController@delete')->name('delete_supplier');
 		
 	});
@@ -75,4 +71,5 @@ Route::get('/checkout', 'CartController@getCheckOut');
 Route::post('/checkout', 'CartController@postCheckOut');
 
 Route::post('/cart', 'CartController@cart')->name('shopping_cart');
+Route::post('/cart-remove', 'CartController@cart_remove')->name('remove_cart');
 Auth::routes();

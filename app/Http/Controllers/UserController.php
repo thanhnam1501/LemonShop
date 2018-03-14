@@ -9,6 +9,6 @@ class UserController extends Controller
 {
     public function show(){
     	$users = User::get()->all();
-    	return view('user', ['users' => $users]);
+    	return view('admin/user', ['users' => $users]);
     }
 }

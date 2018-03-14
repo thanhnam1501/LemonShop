@@ -112,7 +112,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2">
-                            <a class="logo" href="index.html">
+                            <a class="logo" href="{{route('home')}}">
                             <img class="site_logo" alt="Site Logo"  src="img/logo.png"/>
                             </a>	
                         </div>
@@ -200,7 +200,7 @@
                                         <ul class="nav navbar-nav">
                                             <!-- Home Menu -->
                                             <li>
-                                                <a href="index.html">Home</a> 
+                                                <a href="{{route('home')}}">Home</a> 
                                             </li>
                                             <!-- Pages Menu Ends -->
                                             <li class="mega-menu">
@@ -406,7 +406,7 @@
                         <div class="breadcrumb-box">
                             <ul class="breadcrumb">
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="{{route('home')}}">Home</a>
                                 </li>
                                 <li>
                                     <a href="index.html">Shop</a>
@@ -439,14 +439,15 @@
                             <tbody>
                                  @foreach($cart as $item)
                                 <tr>
-                                    <td><a href=""><img src="{{ asset('image_link') }}/home/product1.jpg" alt=""></a></td>
+                                    <td><a href=""><img src="{{ asset('image_link') }}" alt=""></a></td>
                                     <td class="cart-product-title"><a href="#">{{$item->name}}</a></td>
                                     <td class="cart-product-price"><span>{{ number_format($item->price)}} VNĐ</span></td>
                                     <td class="p-qty">
+                          
                                         <input class="quantity_field" value="1" type="number" min="2" max="20" step="1" data-min="1"/>
                                     </td>
                                     <td class="cart-product-price"><span>{{ number_format($item->subtotal)}} VNĐ</span></td>
-                                    <td class="delete-products"><a href="#"><i class="fa fa-times"></i></a></td>
+                                    <td class="delete-products"><a href="{{url("cart-remove?product_id=$item->id")}}"><i class="fa fa-times"></i></a></td>
                                 </tr>
                   {{--               <tr>
                                     <td><a href="#"><img src="img/product/cart2.jpg" alt="cart"></a></td>

@@ -199,7 +199,7 @@
                                         <span class="icon-bar"></span> 
                                         <span class="icon-bar"></span></button> 
                                         <!-- Logo -->
-                                        <a class="navbar-brand responsive_logo" href="index.html">
+                                        <a class="navbar-brand responsive_logo" href="#">
                                             <img class="site_logo" alt="Site Logo"  src="img/logo1.png"/>
                                         </a>
                                     </div>
@@ -209,7 +209,7 @@
                                         <ul class="nav navbar-nav">
                                             <!-- Home Menu -->
                                             <li>
-                                                <a href="index.html">Home</a> 
+                                                <a href="#">Home</a> 
                                             </li>
                                             <li class="mega-menu">
                                                 <a href="">Category <span class="caret menu-arrow"></span></a>
@@ -377,7 +377,7 @@
                                                 <a href="#">pages<span class="caret menu-arrow"></span></a>
                                                 <ul class="dropdown-menu wv_menu_color">
                                                     <li>
-                                                        <a href="{{route ( 'cart' )}}">shopping cart</a>
+                                                        <a href="{{route ( 'shopping_cart' )}}">shopping cart</a>
                                                     </li>
                                                     <li>
                                                         <a href="checkout.html">checkout</a>
@@ -3502,5 +3502,35 @@
                 <script type="text/javascript" src="js/switcher.js"></script> 
                 <!-- Custom JS -->
                 <script type="text/javascript" src="js/main.js"></script> 
+
+    <script type="text/javascript">
+        function updateCatalog(id){
+            $('#update').modal('show');
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            event.preventDefault();
+            var name = $('#name').val();
+            var content = $('#content').val();
+            $.ajax({
+                url: '{{ route('edit_catalog')}}',
+                type: 'POST',
+                dataType: 'JSON',
+                data: {id : id},
+                success:function(res){
+                    var data = res.data;
+
+                    $('#nameUpdate').val(data.name)
+                    $('#contentUpdate').val(data.content)
+                    $('#idUpdate').val(data.id)
+                }
+            });
+
+        }
+
+    </script>
             </body>
             </html>

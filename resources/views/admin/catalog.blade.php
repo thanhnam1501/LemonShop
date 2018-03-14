@@ -161,6 +161,7 @@
 	@section('script')
 
 	<script>
+		
 		$(document).ready(function(){
 			$.ajaxSetup({
 				headers: {
@@ -168,7 +169,7 @@
 				}
 			});
 			$("#form").submit(function(e){
-				console.log('ok');
+
 				e.preventDefault();
 				var name = $('#name').val();
 				var content = $('#content').val();
@@ -291,7 +292,6 @@
 				var id = $('#idUpdate').val();
 				var name = $('#nameUpdate').val();
 				var content = $('#contentUpdate').val();
-				console.log(id);
 				$.ajax({
 					url: '{{route('update_catalog')}}',
 					type: 'POST',
@@ -387,7 +387,6 @@
 
 				function($id){
 					event.preventDefault();
-					console.log(id);
 					$.ajax({
 						url: '{{ route('delete_catalog')}}',
 						type: 'POST',

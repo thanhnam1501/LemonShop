@@ -13,3 +13,12 @@ class FrontController extends Controller
         return view('home', ['data'=> $data]);
     }
 }
+
+    // public function edit(Request $request){
+    //   $id = $request->id;
+    //   $data = Product::find($id);
+    //   return response()->json([
+    //     'status' => true,
+    //     'data' => $data,
+    //   ]);
+    // }

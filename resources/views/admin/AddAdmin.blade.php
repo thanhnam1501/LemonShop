@@ -54,8 +54,9 @@
 				<th>Quyền hạn</th>
 				<td>				
 					<select name="permission">
-						<option value="1" >Quản trị viên</option>
-						<option value="2" >vip</option>
+						<option value="0" >Quản trị viên</option>
+						<option value="1" >Vip</option>
+						<option value="2" >Biên Tâp Viên</option>
 					</select>			
 				</td>
 			</tr>

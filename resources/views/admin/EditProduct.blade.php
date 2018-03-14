@@ -1,154 +1,23 @@
 @extends('layout.app')
 @section('content')
 
-<div class="row">
-	<div class="col-xs-12">
-		<h3 class="header smaller lighter blue">Danh Sách Sản Phẩm</h3>
+<form action="{{route('add_product')}}" method="POST" class="form-horizontal" role="form" enctype="multipart/form-data">
+	
+	<table class="table table-hover">
+	
+		<tbody>
 
-		<div class="clearfix">
-			<div class="pull-right tableTools-container"></div>
-		</div>
-		<div class="table-header">
-			Results for "Latest Registered Domains"
-		</div>
-
-		<!-- div.table-responsive -->
-
-		<!-- div.dataTables_borderWrap -->
-		<div>
-			<table id="dynamic-table" class="table table-striped table-bordered table-hover">
-				<thead>
-					<tr>
-						<th class="center">
-							<label class="pos-rel">
-								<input type="checkbox" class="ace" />
-								<span class="lbl"></span>
-							</label>
-						</th>
-						<th>Tên Sản Phẩm</th>
-						<th>Giá Sản Phẩm</th>
-						<th class="hidden-480">content</th>
-
-						<th>
-							<i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
-							Ngày Đăng Ký
-						</th>
-						<th class="hidden-480">Status</th>
-
-						<th></th>
-					</tr>
-				</thead>
-
-				<tbody>
-					@foreach($products as $product)
-					<tr>
-						<td class="center">
-							<label class="pos-rel">
-								<input type="checkbox" class="ace" />
-								<span class="lbl"></span>
-							</label>
-						</td>
-
-						<td>
-							{{$product->name}}
-						</td>
-						<td>{{number_format($product->price)}}</td>
-						<td class="hidden-480">{!!$product->content!!}</td>
-						<td>{{$product->created_at}}</td>
-
-						<td class="hidden-480">
-							<span class="label label-sm label-warning">Expiring</span>
-						</td>
-
-						<td>
-							<div class="hidden-sm hidden-xs action-buttons">
-								<a class="blue" href="#">
-									<i class="ace-icon fa fa-search-plus bigger-130"></i>
-								</a>
-
-								<a class="green" href="javascript:;" onclick="updateProduct({{$product->id}})">
-									<i class="ace-icon fa fa-pencil bigger-130"></i>
-								</a>
-
-								<a class="red btn_delete" href="javascript:;" onclick="deleteProduct({{$product->id}})">
-									<i class="ace-icon fa fa-trash-o bigger-130"></i>
-								</a>
-								<a class="green" href="google.com" onclick="">
-									<i class="ace-icon fa fa-pencil bigger-130"></i>
-								</a>
-
-						{{-- 	<a class="red btn_delete" href="{{route ('edit.product')}}" onclick="">
-								<i class="ace-icon fa fa-trash-o bigger-130"></i>
-							</a> --}} 
+			<tr>
+				<td>
+					<input type="hidden" name="id" value="{{$products->id}}">
+					<h3>Thêm sản phẩm mới</h3>
+					<div class="form-group">
+						<div class="col-sm-9" >
+							<input type="text" class="form-control" value="{{strtoupper($products->name)}}" name="name"  />
 						</div>
-
-						<div class="hidden-md hidden-lg">
-							<div class="inline pos-rel">
-								<button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
-									<i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
-								</button>
-
-								<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-									<li>
-										<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-											<span class="blue">
-												<i class="ace-icon fa fa-search-plus bigger-120"></i>
-											</span>
-										</a>
-									</li>
-
-									<li>
-										<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-											<span class="green">
-												<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-											</span>
-										</a>
-									</li>
-
-									<li>
-										<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-											<span class="red">
-												<i class="ace-icon fa fa-trash-o bigger-120"></i>
-											</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</td>
-				</tr>
-				@endforeach
-			</tbody>
-		</table>
-	</div>
-</div>
-</div>
-
-<div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exa	mpleModalLabel">Sửa Thông Tin</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-
-				<form action="" method="POST" class="form-horizontal" role="form" enctype="multipart/form-data">
-					<table class="table table-hover">
-						<tbody>
-							<tr>
-								<td>
-									<input type="hidden" name="id" id="idUpdate" value="">
-									<h3>Thêm sản phẩm mới</h3>
-									<div class="form-group">
-										<div class="col-sm-9" >
-											<input id="nameUpdate" type="text" class="form-control" placeholder="Tên Sản Phẩm" name="name"  />
-										</div>
-									</div>
+					</div>
 					<div class="form-group" style="margin-left: 3%">
-						Liên kết tĩnh: <a>http://lemonshop.com/san-pham/<input type="" name="slug" id="slugUpdate">
+						Liên kết tĩnh: <a>http://lemonshop.com/san-pham/{{$products->slug}}
 						</a>
 					</div>
 				</td>
@@ -158,7 +27,7 @@
 				<td>
 					<div style="float: left;">
 						<h4 style="float: left;">Giá sản phẩm: &nbsp; &nbsp; </h4>
-						<input id="priceUpdate" type="text" name="price" value="">
+						<input type="text" name="price" value="{{$products->price}}">
 					</div>
 
 
@@ -167,7 +36,7 @@
 			<td>
 				<div style="">
 					<h4 style="float: left;">Giá khuyến mại: &nbsp; &nbsp;</h4>
-					<input id="" type="text" name="price_discount" value="">
+					<input type="text" name="price_discount" value="{{$products->price_discount}}">
 				</div>
 			</div>
 		</td>
@@ -176,14 +45,14 @@
 	<tr>
 		<td>
 			<h4>Mô tả ngắn cho sản phẩm</h4><br>
-			<textarea class="wysiwyg-editor" style="width: 100%" name="sort_content" value="" id="sort_content sort_contentUpdate"></textarea>
+			<textarea class="wysiwyg-editor" style="width: 100%" name="sort_content" value="{{$products->content}}" id="sort_content"></textarea>
 		</td>
 	</tr>
 
 	<tr>
 		<td>
 			<h4>Mô tả chi tiết cho sản phẩm</h4><br>
-			<textarea class="wysiwyg-editor" style="width: 100%" name="content" id="content contentUpdate" value=""></textarea>
+			<textarea class="wysiwyg-editor" style="width: 100%" name="content" id="content" value="{{$products->sort_content}}"></textarea>
 		</td>
 	</tr>
 
@@ -200,7 +69,7 @@
 							<div class="form-group">
 								<div class="col-xs-12">
 									<label class="ace-file-input ace-file-multiple">
-										<input type="file" id="id-input-file-3" name="image_link">
+										<input type="file" id="id-input-file-3" name="image_link" value="{{$products->image}}">
 										<a class="remove" href="#">
 											<i class=" ace-icon fa fa-times"> </i>
 										</a>
@@ -222,6 +91,7 @@
 
 				<h4>Danh mục sản phẩm</h4>
 				<select name="catalog_id">
+					<option class="active" value="{{$products->catalog}}"></option>
 					@foreach($catalogs as $catalog)
 					<option value="{{$catalog->id}}">{{$catalog -> name}}</option>
 					@endforeach
@@ -230,7 +100,9 @@
 			</div>
 		</td>
 	</tr>
+
 </tbody>
+
 </table>
 
 {{csrf_field()}}
@@ -238,84 +110,223 @@
 <button type="submit" class="btn btn-primary">Đăng Bài Viết</button>
 </form>
 
-</div>
-</div>
-</div>
-</div>
+
 @endsection
 @section('script')
 
-<script type="text/javascript">
-	function updateProduct(id){
-		$('#update').modal('show');
-$.ajaxSetup({
-				headers: {
-					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-				}
-			});
-		event.preventDefault();
-		var name = $('#name').val();
-		var price = $('#price').val();
-		var price_discount = $('#price_discount').val();
-		var content = $('#content').val();
-		var sort_content =$('#sort_content').val();
-		var image_link = $('#image_link').val();
-		var catalog = $('#catalog').val();
-		$.ajax({
-			url: '{{ route('edit.product')}}',
-			type: 'POST',
-			dataType: 'JSON',
-			data: {id : id},
-			success:function(res){
-				var data = res.data;
-				$('#nameUpdate').val(data.name)
-				$('#priceUpdate').val(data.price)
-				$('#contentUpdate').val(data.content)
-				$('#idUpdate').val(data.id)
-				$('#slugUpdate').val(data.slug)
-			}
-		});
+
+<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+		<script src="{{asset('js/admin/jquery-ui.custom.min.js')}}"></script>
+		<script src="{{asset('js/admin/jquery.ui.touch-punch.min.js')}}"></script>
+		<script src="{{asset('js/admin/chosen.jquery.min.js')}}"></script>
+		<script src="{{asset('js/admin/spinbox.min.js')}}"></script>
+		<script src="{{asset('js/admin/bootstrap-datepicker.min.js')}}"></script>
+		<script src="{{asset('js/admin/bootstrap-timepicker.min.js')}}"></script>
+		<script src="{{asset('js/admin/moment.min.js')}}"></script>
+		<script src="{{asset('js/admin/daterangepicker.min.js')}}"></script>
+		<script src="{{asset('js/admin/bootstrap-datetimepicker.min.js')}}"></script>
+		<script src="{{asset('js/admin/bootstrap-colorpicker.min.js')}}"></script>
+		<script src="{{asset('js/admin/jquery.knob.min.js')}}"></script>
+		<script src="{{asset('js/admin/autosize.min.js')}}"></script>
+		<script src="{{asset('js/admin/jquery.inputlimiter.min.js')}}"></script>
+		<script src="{{asset('js/admin/jquery.maskedinput.min.js')}}"></script>
+		<script src="{{asset('js/admin/bootstrap-tag.min.js')}}"></script>
 
 
-	}
-</script>
-<script type="text/javascript">
-	function deleteProduct(id){
-		$('.btn_delete').click(function(){
-			// alert('aaa');
-			swal({
-				title: "Bạn có muốn xóa không?",
-				type: "warning",
-				showCancelButton: true,
-				confirmButtonColor: "#DD6B55",
-				confirmButtonText: "Có",
-				cancelButtonText: "Không",
-					// closeOnConfirm: false
-				},
-				function($id){
-					event.preventDefault();
 
-					$.ajax({
-						url: '',
-						type: 'POST',
-						dataType: 'JSON',
-						data: {id : id},
-						success:function(res){
-							swal("Delete!", "Bạn đã xóa thành công");
-							toastr.success('Bạn đã xóa thành công!');
-							$('#supplier_'+id).remove();
-						}
-					});
-				});
-		});
-	}
-</script>
-	<script type="text/javascript">
-			CKEDITOR.replace('sort_content');
-			CKEDITOR.replace('content');
+		<!-- ace scripts -->
+		
 
-		</script>
+		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
+			jQuery(function($){
+
+				$('textarea[data-provide="markdown"]').each(function(){
+					var $this = $(this);
+
+					if ($this.data('markdown')) {
+						$this.data('markdown').showEditor();
+					}
+					else $this.markdown()
+
+						$this.parent().find('.btn').addClass('btn-white');
+				})
+
+
+
+				function showErrorAlert (reason, detail) {
+					var msg='';
+					if (reason==='unsupported-file-type') { msg = "Unsupported format " +detail; }
+					else {
+			//console.log("error uploading file", reason, detail);
+		}
+		$('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>'+ 
+			'<strong>File upload error</strong> '+msg+' </div>').prependTo('#alerts');
+	}
+
+	//$('#editor1').ace_wysiwyg();//this will create the default editor will all buttons
+
+	//but we want to change a few buttons colors for the third style
+	$('#editor1').ace_wysiwyg({
+		toolbar:
+		[
+		'font',
+		null,
+		'fontSize',
+		null,
+		{name:'bold', className:'btn-info'},
+		{name:'italic', className:'btn-info'},
+		{name:'strikethrough', className:'btn-info'},
+		{name:'underline', className:'btn-info'},
+		null,
+		{name:'insertunorderedlist', className:'btn-success'},
+		{name:'insertorderedlist', className:'btn-success'},
+		{name:'outdent', className:'btn-purple'},
+		{name:'indent', className:'btn-purple'},
+		null,
+		{name:'justifyleft', className:'btn-primary'},
+		{name:'justifycenter', className:'btn-primary'},
+		{name:'justifyright', className:'btn-primary'},
+		{name:'justifyfull', className:'btn-inverse'},
+		null,
+		{name:'createLink', className:'btn-pink'},
+		{name:'unlink', className:'btn-pink'},
+		null,
+		{name:'insertImage', className:'btn-success'},
+		null,
+		'foreColor',
+		null,
+		{name:'undo', className:'btn-grey'},
+		{name:'redo', className:'btn-grey'}
+		],
+		'wysiwyg': {
+			fileUploadError: showErrorAlert
+		}
+	}).prev().addClass('wysiwyg-style2');
+
+	
+	/**
+	//make the editor have all the available height
+	$(window).on('resize.editor', function() {
+		var offset = $('#editor1').parent().offset();
+		var winHeight =  $(this).height();
+		
+		$('#editor1').css({'height':winHeight - offset.top - 10, 'max-height': 'none'});
+	}).triggerHandler('resize.editor');
+	*/
+	
+
+	$('#editor2').css({'height':'200px'}).ace_wysiwyg({
+		toolbar_place: function(toolbar) {
+			return $(this).closest('.widget-box')
+			.find('.widget-header').prepend(toolbar)
+			.find('.wysiwyg-toolbar').addClass('inline');
+		},
+		toolbar:
+		[
+		'bold',
+		{name:'italic' , title:'Change Title!', icon: 'ace-icon fa fa-leaf'},
+		'strikethrough',
+		null,
+		'insertunorderedlist',
+		'insertorderedlist',
+		null,
+		'justifyleft',
+		'justifycenter',
+		'justifyright'
+		],
+		speech_button: false
+	});
+	
+	
+
+
+	$('[data-toggle="buttons"] .btn').on('click', function(e){
+		var target = $(this).find('input[type=radio]');
+		var which = parseInt(target.val());
+		var toolbar = $('#editor1').prev().get(0);
+		if(which >= 1 && which <= 4) {
+			toolbar.className = toolbar.className.replace(/wysiwyg\-style(1|2)/g , '');
+			if(which == 1) $(toolbar).addClass('wysiwyg-style1');
+			else if(which == 2) $(toolbar).addClass('wysiwyg-style2');
+			if(which == 4) {
+				$(toolbar).find('.btn-group > .btn').addClass('btn-white btn-round');
+			} else $(toolbar).find('.btn-group > .btn-white').removeClass('btn-white btn-round');
+		}
+	});
+
+
+	
+
+	//RESIZE IMAGE
+	
+	//Add Image Resize Functionality to Chrome and Safari
+	//webkit browsers don't have image resize functionality when content is editable
+	//so let's add something using jQuery UI resizable
+	//another option would be opening a dialog for user to enter dimensions.
+	if ( typeof jQuery.ui !== 'undefined' && ace.vars['webkit'] ) {
+		
+		var lastResizableImg = null;
+		function destroyResizable() {
+			if(lastResizableImg == null) return;
+			lastResizableImg.resizable( "destroy" );
+			lastResizableImg.removeData('resizable');
+			lastResizableImg = null;
+		}
+
+		var enableImageResize = function() {
+			$('.wysiwyg-editor')
+			.on('mousedown', function(e) {
+				var target = $(e.target);
+				if( e.target instanceof HTMLImageElement ) {
+					if( !target.data('resizable') ) {
+						target.resizable({
+							aspectRatio: e.target.width / e.target.height,
+						});
+						target.data('resizable', true);
+						
+						if( lastResizableImg != null ) {
+							//disable previous resizable image
+							lastResizableImg.resizable( "destroy" );
+							lastResizableImg.removeData('resizable');
+						}
+						lastResizableImg = target;
+					}
+				}
+			})
+			.on('click', function(e) {
+				if( lastResizableImg != null && !(e.target instanceof HTMLImageElement) ) {
+					destroyResizable();
+				}
+			})
+			.on('keydown', function() {
+				destroyResizable();
+			});
+		}
+
+		enableImageResize();
+
+		/**
+		//or we can load the jQuery UI dynamically only if needed
+		if (typeof jQuery.ui !== 'undefined') enableImageResize();
+		else {//load jQuery UI if not loaded
+			//in Ace demo ./components will be replaced by correct components path
+			$.getScript("assets/js/jquery-ui.custom.min.js", function(data, textStatus, jqxhr) {
+				enableImageResize()
+			});
+		}
+		*/
+	}
+
+
+});
+</script>
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
 	jQuery(function($) {
 		$('#id-disable-check').on('click', function() {
 			var inp = $('#form-input-readonly').get(0);
@@ -750,4 +761,9 @@ $.ajaxSetup({
 
 			});
 		</script>
-@endsection
+		<script type="text/javascript">
+			CKEDITOR.replace('sort_content');
+			CKEDITOR.replace('content');
+
+		</script>
+		@endsection

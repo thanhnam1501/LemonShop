@@ -4,7 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Catalog;
 class AdminController extends Controller
 {
 	/**
@@ -25,9 +25,8 @@ class AdminController extends Controller
 	public function getIndex() {
 		return view('admin/admin');
 	}
-	public function getProduct() {
-		return view('admin/product');
-	}
+
+
 	public function store(Request $request){
 		$data = $request->all(); 
 		Admin::create($data);

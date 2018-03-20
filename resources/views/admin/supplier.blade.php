@@ -24,11 +24,12 @@
 			</tbody>
 		</table>
 		<button type="submit" class="btn-primary btn" id="btnSubmit">Thêm nhà cung cấp</button>
-	</form></div>
+	</form>
+</div>
 	<div style="float: left;" class="container col-xs-8">
 		<table id="dynamic-table" class="table table-striped table-bordered table-hover">
 			<thead>
-				<tr class="flag">
+				<tr >
 					{{-- <th class="center">
 						Stt
 					</th> --}}
@@ -40,6 +41,7 @@
 			</thead>
 
 			<tbody>
+				<tr class="flag"></tr>
 				@foreach($suppliers as $supplier)
 				<tr id="supplier_{{$supplier->id}}" >
 					<td>
@@ -196,8 +198,8 @@
 						var data = res.data;
 						console.log(data);
 						html = '<tr id = "supplier_'+data.id+'">'+
-						'<td>'+
-						'<a href="#">'+data.name+'</a>'+
+						'<td>'
+						+data.name+
 						'</td>'+
 						'<td>'+data.content+ '</td>'+
 						'<td>'+data.content+ '</td>'+
@@ -262,9 +264,6 @@
 					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 				}
 			});
-			event.preventDefault();
-			var name = $('#name').val();
-			var content = $('#content').val();
 			$.ajax({
 				url: '{{ route('edit_supplier')}}',
 				type: 'POST',
@@ -288,6 +287,7 @@
 				}
 			});
 			$("#formUpdate").submit(function(e){
+				
 				e.preventDefault();
 				var id = $('#idUpdate').val();
 				var name = $('#nameUpdate').val();
@@ -366,29 +366,39 @@
 			$('.btn_delete').click(function(){
 			// alert('aaa');
 			swal({
-				title: "Bạn có muốn xóa không?",
+				title: "Bạn có chắc muốn xóa?",
+				text: "Bạn sẽ không thể khôi phục lại bản ghi này !",
 				type: "warning",
 				showCancelButton: true,
 				confirmButtonColor: "#DD6B55",
-				confirmButtonText: "Có",
 				cancelButtonText: "Không",
-					// closeOnConfirm: false
-				},
-				function($id){
-					event.preventDefault();
-					console.log(id);
+				confirmButtonText: "Có",
+				closeOnConfirm: true,
+			},
+			function(isConfirm){
+				if (isConfirm) {
 					$.ajax({
-						url: '{{ route('delete_supplier')}}',
+						url: '{{ route('delete.supplier') }}',
 						type: 'POST',
-						dataType: 'JSON',
-						data: {id : id},
-						success:function(res){
-							swal("Delete!", "Bạn đã xóa thành công");
-							toastr.success('Bạn đã xóa thành công!');
-							$('#supplier_'+id).remove();
+						data: {id: id},
+
+						success : function(res) {
+							console.log(res);
+							if (res.status) {
+								$('#supplier_'+id).remove();
+								toastr.success('Xoá thành công!', '',{timeOut: 1000});
+							}
+						},
+						error: function(xhr, ajaxOptions, thrownError) {
+							toastr.error('Xoá thất bại!', '',{timeOut: 1000});
 						}
 					});
-				});
+
+				}else{
+					toastr.error('Thao tác bị huỷ!', '',{timeOut: 1000});
+				}
+			});
+
 		});
 		}
 

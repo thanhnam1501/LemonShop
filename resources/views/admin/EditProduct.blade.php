@@ -1,23 +1,20 @@
 @extends('layout.app')
 @section('content')
 
-<form action="{{route('add_product')}}" method="POST" class="form-horizontal" role="form" enctype="multipart/form-data">
-	
+<form action="" method="POST" class="form-horizontal" role="form" enctype="multipart/form-data">
 	<table class="table table-hover">
-	
 		<tbody>
-
 			<tr>
 				<td>
 					<input type="hidden" name="id" value="{{$products->id}}">
 					<h3>Thêm sản phẩm mới</h3>
 					<div class="form-group">
 						<div class="col-sm-9" >
-							<input type="text" class="form-control" value="{{strtoupper($products->name)}}" name="name"  />
+							<input type="text" class="form-control" placeholder="Tên Sản Phẩm" name="name" value="{{strtoupper($products->name)}}"  />
 						</div>
 					</div>
 					<div class="form-group" style="margin-left: 3%">
-						Liên kết tĩnh: <a>http://lemonshop.com/san-pham/{{$products->slug}}
+						Liên kết tĩnh: <a href="#">http://lemonshop.com/san-pham/{{$products->slug}}
 						</a>
 					</div>
 				</td>
@@ -27,7 +24,7 @@
 				<td>
 					<div style="float: left;">
 						<h4 style="float: left;">Giá sản phẩm: &nbsp; &nbsp; </h4>
-						<input type="text" name="price" value="{{$products->price}}">
+						<input type="text" name="price" value="{{number_format($products->price)}}đ">
 					</div>
 
 
@@ -36,7 +33,7 @@
 			<td>
 				<div style="">
 					<h4 style="float: left;">Giá khuyến mại: &nbsp; &nbsp;</h4>
-					<input type="text" name="price_discount" value="{{$products->price_discount}}">
+					<input type="text" name="price_discount" value="{{number_format($products->price_discount)}}">
 				</div>
 			</div>
 		</td>
@@ -45,14 +42,14 @@
 	<tr>
 		<td>
 			<h4>Mô tả ngắn cho sản phẩm</h4><br>
-			<textarea class="wysiwyg-editor" style="width: 100%" name="sort_content" value="{{$products->content}}" id="sort_content"></textarea>
+			<textarea  id="sort_content" class="wysiwyg-editor" style="width: 100%" name="sort_content" >{!!$products->sort_content!!}</textarea>
 		</td>
 	</tr>
 
 	<tr>
 		<td>
 			<h4>Mô tả chi tiết cho sản phẩm</h4><br>
-			<textarea class="wysiwyg-editor" style="width: 100%" name="content" id="content" value="{{$products->sort_content}}"></textarea>
+			<textarea class="wysiwyg-editor" style="width: 100%" name="content" id="content" value="">{{$products->content}}</textarea>
 		</td>
 	</tr>
 
@@ -91,18 +88,16 @@
 
 				<h4>Danh mục sản phẩm</h4>
 				<select name="catalog_id">
-					<option class="active" value="{{$products->catalog}}"></option>
+					<option value="{{$products->catalog_id}}" class="active">{{$products->catalog_name}}</option>
 					@foreach($catalogs as $catalog)
-					<option value="{{$catalog->id}}">{{$catalog -> name}}</option>
+					<option value="{{$catalog->id}}">{{$catalog ->name}}</option>
 					@endforeach
 				</select>
 
 			</div>
 		</td>
 	</tr>
-
 </tbody>
-
 </table>
 
 {{csrf_field()}}
@@ -113,34 +108,6 @@
 
 @endsection
 @section('script')
-
-
-<!-- page specific plugin scripts -->
-
-		<!--[if lte IE 8]>
-		  <script src="assets/js/excanvas.min.js"></script>
-		<![endif]-->
-		<script src="{{asset('js/admin/jquery-ui.custom.min.js')}}"></script>
-		<script src="{{asset('js/admin/jquery.ui.touch-punch.min.js')}}"></script>
-		<script src="{{asset('js/admin/chosen.jquery.min.js')}}"></script>
-		<script src="{{asset('js/admin/spinbox.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootstrap-datepicker.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootstrap-timepicker.min.js')}}"></script>
-		<script src="{{asset('js/admin/moment.min.js')}}"></script>
-		<script src="{{asset('js/admin/daterangepicker.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootstrap-datetimepicker.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootstrap-colorpicker.min.js')}}"></script>
-		<script src="{{asset('js/admin/jquery.knob.min.js')}}"></script>
-		<script src="{{asset('js/admin/autosize.min.js')}}"></script>
-		<script src="{{asset('js/admin/jquery.inputlimiter.min.js')}}"></script>
-		<script src="{{asset('js/admin/jquery.maskedinput.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootstrap-tag.min.js')}}"></script>
-
-
-
-		<!-- ace scripts -->
-		
-
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
 			jQuery(function($){

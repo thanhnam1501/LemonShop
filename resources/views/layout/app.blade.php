@@ -945,6 +945,20 @@
 		<script src="{{asset('/js/admin/buttons.print.min.js')}}"></script>
 		<script src="{{asset('/js/admin/buttons.colVis.min.js')}}"></script>
 		<script src="{{asset('/js/admin/dataTables.select.min.js')}}"></script>
+		<script src="{{asset('js/admin/chosen.jquery.min.js')}}"></script>
+		<script src="{{asset('js/admin/spinbox.min.js')}}"></script>
+		<script src="{{asset('js/admin/bootstrap-datepicker.min.js')}}"></script>
+		<script src="{{asset('js/admin/bootstrap-timepicker.min.js')}}"></script>
+		<script src="{{asset('js/admin/moment.min.js')}}"></script>
+		<script src="{{asset('js/admin/daterangepicker.min.js')}}"></script>
+		<script src="{{asset('js/admin/bootstrap-datetimepicker.min.js')}}"></script>
+		<script src="{{asset('js/admin/bootstrap-colorpicker.min.js')}}"></script>
+		<script src="{{asset('js/admin/jquery.knob.min.js')}}"></script>
+		<script src="{{asset('js/admin/autosize.min.js')}}"></script>
+		<script src="{{asset('js/admin/jquery.inputlimiter.min.js')}}"></script>
+		<script src="{{asset('js/admin/jquery.maskedinput.min.js')}}"></script>
+		<script src="{{asset('js/admin/bootstrap-tag.min.js')}}"></script>
+
 
 
 		@yield('script')
@@ -1743,6 +1757,7 @@
 			});
 		</script>
 
+		
 		
 	</body>
 	</html>

@@ -38,10 +38,18 @@ class ProductController extends Controller
     	return view('admin/product', ['products' => $products, 'catalogs' => $catalogs]);
     }
 
-    public function edit(Request $request){
-        $id = $request->all();
+    public function edit(Request $request,$id){
         $products = Product::find($id);
+        $data = Catalog::find($products['catalog_id']);
+        $products['catalog_name'] = $data['name'];
         $catalogs = Catalog::get();
-          return view('admin/EditProduct', ['products' => $products, 'catalogs' => $catalogs]);
-    }   
+        return view('admin/Editproduct', ['products' => $products, 'catalogs' => $catalogs]);
+    }  
+      public function delete(Request $request){
+      $id = $request->id;
+      Product::find($id)->delete();
+      return response()->json([
+        'status' => true
+      ]);
+    } 
 }

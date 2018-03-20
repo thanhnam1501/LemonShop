@@ -107,34 +107,6 @@
 
 @endsection
 @section('script')
-
-
-<!-- page specific plugin scripts -->
-
-		<!--[if lte IE 8]>
-		  <script src="assets/js/excanvas.min.js"></script>
-		<![endif]-->
-		<script src="{{asset('js/admin/jquery-ui.custom.min.js')}}"></script>
-		<script src="{{asset('js/admin/jquery.ui.touch-punch.min.js')}}"></script>
-		<script src="{{asset('js/admin/chosen.jquery.min.js')}}"></script>
-		<script src="{{asset('js/admin/spinbox.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootstrap-datepicker.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootstrap-timepicker.min.js')}}"></script>
-		<script src="{{asset('js/admin/moment.min.js')}}"></script>
-		<script src="{{asset('js/admin/daterangepicker.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootstrap-datetimepicker.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootstrap-colorpicker.min.js')}}"></script>
-		<script src="{{asset('js/admin/jquery.knob.min.js')}}"></script>
-		<script src="{{asset('js/admin/autosize.min.js')}}"></script>
-		<script src="{{asset('js/admin/jquery.inputlimiter.min.js')}}"></script>
-		<script src="{{asset('js/admin/jquery.maskedinput.min.js')}}"></script>
-		<script src="{{asset('js/admin/bootstrap-tag.min.js')}}"></script>
-
-
-
-		<!-- ace scripts -->
-		
-
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
 			jQuery(function($){

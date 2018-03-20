@@ -22,7 +22,7 @@ class AdminController extends Controller
     {
         return view('admin/dashboard');
     }
-    public function show()
+     public function show()
     {
         $admins= Admin::get();
         return view('admin/admin', ['admins' => $admins]);

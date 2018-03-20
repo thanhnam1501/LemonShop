@@ -16,7 +16,7 @@
     <meta name="author" content="webvillee.com"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Lemon Shop </title>
+    <title>Lemon Shop</title>
     <!-- Bootstrap -->
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -62,17 +62,15 @@
                             <nav id="user-top-bar">
                                 <ul class="list-inline textL">
                                     <li>
-                                        <a href="#">VND <i class="fa fa-caret-down"></i></a>
+                                        <a href="#">USD <i class="fa fa-caret-down"></i></a>
                                         <ul>
-                                            <li><a href="#">VND</a></li>
                                             <li><a href="#">EUR</a></li>
                                             <li><a href="#">USD</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">Việt Nam <i class="fa fa-caret-down"></i></a>
+                                        <a href="#">English <i class="fa fa-caret-down"></i></a>
                                         <ul>
-                                            <li><a href="#">Việt Nam</a></li>
                                             <li><a href="#">English</a></li>
                                             <li><a href="#">Français</a></li>
                                         </ul>
@@ -89,17 +87,15 @@
                             <nav>
                                 <ul>
                                     <li>
-                                        <a href="#">Việt Nam <i class="fa fa-caret-down"></i></a>
+                                        <a href="#">English <i class="fa fa-caret-down"></i></a>
                                         <ul>
-                                            <li><a href="#">Việt Nam</a></li>
                                             <li><a href="#">English</a></li>
                                             <li><a href="#">Français</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">VND <i class="fa fa-caret-down"></i></a>
+                                        <a href="#">USD <i class="fa fa-caret-down"></i></a>
                                         <ul>
-                                            <li><a href="#">VND</a></li>
                                             <li><a href="#">EUR</a></li>
                                             <li><a href="#">USD</a></li>
                                         </ul>
@@ -116,7 +112,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-2">
-                        <a class="logo" href="#">
+                        <a class="logo" href="index.html">
                             <img class="site_logo" alt="Site Logo"  src="img/logo.png"/>
                         </a>    
                     </div>
@@ -176,7 +172,7 @@
                                 </div>
                             </li>
                             <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
-                            <li><a href="{{route('shopping_cart')}}"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -199,7 +195,7 @@
                                         <span class="icon-bar"></span> 
                                         <span class="icon-bar"></span></button> 
                                         <!-- Logo -->
-                                        <a class="navbar-brand responsive_logo" href="#">
+                                        <a class="navbar-brand responsive_logo" href="index.html">
                                             <img class="site_logo" alt="Site Logo"  src="img/logo1.png"/>
                                         </a>
                                     </div>
@@ -209,7 +205,7 @@
                                         <ul class="nav navbar-nav">
                                             <!-- Home Menu -->
                                             <li>
-                                                <a href="#">Home</a> 
+                                                <a href="index.html">Home</a> 
                                             </li>
                                             <li class="mega-menu">
                                                 <a href="">Category <span class="caret menu-arrow"></span></a>
@@ -220,7 +216,7 @@
                                                             <!-- Home Variation 1 Block -->
                                                             <div class="col-sm-3">
                                                                 <!-- Title -->
-                                                                <h6 class="title">Phái Mạnh</h6>
+                                                                <h6 class="title">Mens</h6>
                                                                 <!-- Links -->
                                                                 <div class="page-links">
                                                                     <div>
@@ -244,7 +240,7 @@
                                                             <!-- Home Variation 2 Block -->
                                                             <div class="col-sm-3">
                                                                 <!-- Title -->
-                                                                <h6 class="title">Phái Đẹp</h6>
+                                                                <h6 class="title">Womens</h6>
                                                                 <!-- Links -->
                                                                 <div class="page-links">
                                                                     <div>
@@ -268,20 +264,20 @@
                                                             <!-- One Page variation 1 -->
                                                             <div class="col-sm-3">
                                                                 <!-- Title -->
-                                                                <h6 class="title">Phụ Kiện</h6>
+                                                                <h6 class="title">Accessories</h6>
                                                                 <!-- Links -->
                                                                 <div class="page-links">
                                                                     <div>
-                                                                        <a href="#">Giầy</a>
+                                                                        <a href="#">Shoes</a>
                                                                     </div>
                                                                     <div>
-                                                                        <a href="#">Đồng Hồ</a>
+                                                                        <a href="#">Watches</a>
                                                                     </div>
                                                                     <div>
-                                                                        <a href="#">Túi Sách</a>
+                                                                        <a href="#">Bags</a>
                                                                     </div>
                                                                     <div>
-                                                                        <a href="#">Trang Sức</a>
+                                                                        <a href="#">Jwellery</a>
                                                                     </div>
                                                                     <div>
                                                                         <a href="#">Sunglasses</a>
@@ -377,7 +373,7 @@
                                                 <a href="#">pages<span class="caret menu-arrow"></span></a>
                                                 <ul class="dropdown-menu wv_menu_color">
                                                     <li>
-                                                        <a href="{{route ( 'shopping_cart' )}}">shopping cart</a>
+                                                        <a href="shopping-cart.html">shopping cart</a>
                                                     </li>
                                                     <li>
                                                         <a href="checkout.html">checkout</a>
@@ -630,7 +626,7 @@
                 <div class="row pad-s15">
                     <div class="col-md-12">
                         <div class="wv-heading-style2">
-                            <h2>Đồ Gia Dụng</h2>
+                            <h2>Womens</h2>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -640,10 +636,11 @@
                             <div class="wa-tabs category-tab" id="wa-tabs">
                                 <!--Tab Btns-->
                                 <div class="wv_tab_btns clearfix">
+                                    <a href="#wa-latest" class="womens_btn tab-btn wv_tbtn">Sản phẩm mới</a>
+                                    <a href="#wa-best" class="womens_btn tab-btn wv_tbtn">Bán Chạy</a>
+                                    <a href="#wa-popular" class="womens_btn tab-btn wv_tbtn">Phổ Biến</a>
                                     <a href="#wa-accessories" class="womens_btn tab-btn wv_tbtn active-btn">Phụ Kiện</a>
-                                    <a href="#wa-latest" class="womens_btn tab-btn wv_tbtn">latest arrival</a>
-                                    <a href="#wa-best" class="womens_btn tab-btn wv_tbtn">best seller</a>
-                                    <a href="#wa-popular" class="womens_btn tab-btn wv_tbtn">most popular</a>
+
                                 </div>
                                 <!--Tabs Container-->
                                 <div class="tabs-container wv_tabs_container">
@@ -651,1017 +648,2523 @@
                                         <!--Tab first Content item Start-->
                                         <div class="tab womens_tab active-tab" id="wa-accessories">
                                             <div class="owl-carousel-style1" id="women-carousel">
-                                                @foreach($data as $data)
                                                 <div class="wa-item">
                                                     <div class="col-md-12">
-
                                                         <div class="wa-theme-design-block">
                                                             <figure class="dark-theme">
-                                                                <img src="{{$data->image_link}}" alt="Women Thumbnail">
+                                                                <img src="img/women/women1.jpg" alt="Women Thumbnail">
                                                                 <span class="block-sticker-tag1">
-                                                                  <form method="POST" action="{{url('cart')}}">
-                                                                    <input type="hidden" name="product_id" value="{{$data->id}}">
-                                                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                                    <button type="submit" class="btn btn-fefault add-to-cart">
-                                                                       <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-
-                                                                    </button>
-                                                                </form>
-                                                              {{--   <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span> --}}
-                                                            </span> 
-                                                            <span class="block-sticker-tag2">                                      
-                                                                <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                            </span>
-                                                            <span class="block-sticker-tag3">
-                                                                <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                            </span>
-                                                        </figure>
-                                                        <div class="block-caption1">
-                                                            <h4>{{$data->name}}</h4>
-                                                            <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                <span class="price-text-color ">T-shirt</span>
-                                                            </div>
-                                                            <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                <ul class="wv_rating">
-                                                                    <li><i class="fa fa-star"></i></li>
-                                                                    <li><i class="fa fa-star"></i></li>
-                                                                    <li><i class="fa fa-star"></i></li>
-                                                                    <li><i class="fa fa-star"></i></li>
-                                                                    <li><i class="fa fa-star"></i></li>
-                                                                    <li><span class="review">1 review</span></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                            <div class="price col-md-12">
-                                                                <span class="sell-price">{{$data->price}}</span>
-                                                                {{-- <span class="actual-price">$170.00</span> --}}
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                 </div>
-                                            </div>
-                                            @endforeach
-
-
-                                            <!--Tab first Content item End-->
-                                            <!--Tab second Content item Start-->
-                                            <div class="tab womens_tab" id="wa-latest">
-                                                <div class="owl-carousel-style1" id="women-latest">
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women2.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women2.jpg" alt="Women Thumbnail">
+                                                                <div class="ribbon"><span>New</span></div>
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women3.jpg" alt="Women Thumbnail">
-                                                                    <div class="ribbon"><span>New</span></div>
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women3.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women1.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women4.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women4.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women1.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women1.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women2.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women2.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women3.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women3.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women4.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women4.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!--Tab second Content item End-->
-                                            <!--Tab third Content item Start-->
-                                            <div class="tab womens_tab" id="wa-best">
-                                                <div class="owl-carousel-style1" id="women-best">
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women3.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                        </div>
+                                        <!--Tab first Content item End-->
+                                        <!--Tab second Content item Start-->
+                                        <div class="tab womens_tab" id="wa-latest">
+                                            <div class="owl-carousel-style1" id="women-latest">
+                                                @foreach($products as $product)
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="{{$product->image_link}}" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>{{$product->name}}</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">{{$product->supplier->name}}</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">{{$product->price}}</span>
+                                                                    <span class="actual-price">{{$product->price_discount}}</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women1.jpg" alt="Women Thumbnail">
-                                                                    <div class="ribbon"><span>New</span></div>
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                        <!--Tab second Content item End-->
+                                        <!--Tab third Content item Start-->
+                                        <div class="tab womens_tab" id="wa-best">
+                                            <div class="owl-carousel-style1" id="women-best">
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women3.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women2.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women1.jpg" alt="Women Thumbnail">
+                                                                <div class="ribbon"><span>New</span></div>
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women4.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women2.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women1.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women4.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women2.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women1.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women3.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women2.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women4.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women3.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women4.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!--Tab third Content item End-->
-                                            <!--Tab forth Content item Start-->
-                                            <div class="tab womens_tab " id="wa-popular">
-                                                <div class="owl-carousel-style1" id="women-popular">
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women4.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                        </div>
+                                        <!--Tab third Content item End-->
+                                        <!--Tab forth Content item Start-->
+                                        <div class="tab womens_tab " id="wa-popular">
+                                            <div class="owl-carousel-style1" id="women-popular">
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women4.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women1.jpg" alt="Women Thumbnail">
-                                                                    <div class="ribbon"><span>New</span></div>
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women1.jpg" alt="Women Thumbnail">
+                                                                <div class="ribbon"><span>New</span></div>
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women2.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women2.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women3.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women3.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women1.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women1.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women2.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women2.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women3.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women3.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/women/women4.jpg" alt="Women Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/women/women4.jpg" alt="Women Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!--Tab forth Content item End-->
+                                        </div>
+                                        <!--Tab forth Content item End-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//==Women Section End==//-->
+        <!--//======= Banner_add Start =======//--> 
+        <section class="banner-add">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 add-banner">
+                        <div class="banner-left">
+                            <img src="img/all/banner_left.jpg" alt=""/>
+                        </div>
+                        <div class="left-banner-title">
+                            <h3>WOMEN TOP</h3>
+                            <p>SAVE UP TO 50% OFF</p>
+                            <button type="button" class="wv_button marT15">VIEW collection</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 add-banner">
+                        <div class="banner-right">
+                            <img src="img/all/banner_right.jpg" alt=""/>
+                        </div>
+                        <div class="right-banner-title">
+                            <h3>MEN SUITS</h3>
+                            <p>SAVE UP TO 60% OFF</p>
+                            <button type="button" class="wv_button marT15">VIEW collection</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//======= Banner_add Start End =======//--> 
+        <!--//======= Men Section Start=======//-->
+        <!--//==Men Section Start==//-->
+        <section class="login-page padTB100">
+            <div class="container">
+                <div class="row pad-s15">
+                    <div class="col-md-12">
+                        <div class="wv-heading-style2">
+                            <h2>Mens</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <!--wa Info Tabs-->
+                        <div class="wa-info-tabs">
+                            <!--wa Tabs-->
+                            <div class="wa-tabs category-tab" id="wa-tabs1">
+                                <!--Tab Btns-->
+                                <div class="wv_tab_btns clearfix">
+                                   
+                                    <a href="#wa-latest1" class="mens_btn tab-btn wv_tbtn">Sản Phẩm Mới</a>
+                                    <a href="#wa-best1" class="mens_btn tab-btn wv_tbtn">Bán Chạy</a>
+                                    <a href="#wa-popular1" class="mens_btn tab-btn wv_tbtn">Phổ Biến</a>
+                                     <a href="#wa-accessories1" class="mens_btn tab-btn wv_tbtn active-btn">Phụ Kiện</a>
+                                </div>
+                                <!--Tabs Container-->
+                                <div class="tabs-container wv_tabs_container">
+                                    <div class="row">
+                                        <!--Tab first Content item Start-->
+                                        <div class="tab active-tab mens_tab" id="wa-accessories1">
+                                            <div class="owl-carousel-style1" id="men-carousel">
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men1.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men2.jpg" alt="Men Thumbnail">
+                                                                <div class="ribbon"><span>New</span></div>
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men3.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men4.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men1.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men2.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men3.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men4.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Tab first Content item End-->
+                                        <!--Tab second Content item Start-->
+                                        <div class="tab mens_tab" id="wa-latest1">
+                                            <div class="owl-carousel-style1" id="men-latest">
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men2.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men1.jpg" alt="Men Thumbnail">
+                                                                <div class="ribbon"><span>New</span></div>
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men3.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men4.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men1.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men2.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag2"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men3.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men4.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Tab second Content item End-->
+                                        <!--Tab third Content item Start-->
+                                        <div class="tab mens_tab" id="wa-best1">
+                                            <div class="owl-carousel-style1" id="men-best">
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men3.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men1.jpg" alt="Men Thumbnail">
+                                                                <div class="ribbon"><span>New</span></div>
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men2.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men4.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men1.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men2.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men3.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men4.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Tab third Content item End-->
+                                        <!--Tab forth Content item Start-->
+                                        <div class="tab mens_tab" id="wa-popular1">
+                                            <div class="owl-carousel-style1" id="men-popular">
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men4.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men1.jpg" alt="Men Thumbnail">
+                                                                <div class="ribbon"><span>New</span></div>
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men2.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men3.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men1.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men2.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men3.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wa-item">
+                                                    <div class="col-md-12">
+                                                        <div class="wa-theme-design-block">
+                                                            <figure class="dark-theme">
+                                                                <img src="img/men/men4.jpg" alt="Men Thumbnail">
+                                                                <span class="block-sticker-tag1">
+                                                                    <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
+                                                                </span> 
+                                                                <span class="block-sticker-tag2">                                      
+                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                                <span class="block-sticker-tag3">
+                                                                    <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
+                                                                </span>
+                                                            </figure>
+                                                            <div class="block-caption1">
+                                                                <h4>Lorem Crochet Applique Ipsum</h4>
+                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                                    <span class="price-text-color ">T-shirt</span>
+                                                                </div>
+                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                                    <ul class="wv_rating">
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><i class="fa fa-star"></i></li>
+                                                                        <li><span class="review">1 review</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+                                                                <div class="price col-md-12">
+                                                                    <span class="sell-price">$120.00</span>
+                                                                    <span class="actual-price">$170.00</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Tab forth Content item End-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//==Men Section End==//-->  
+        <section class="accessories-add">
+            <div class="container">
+                <div class="col-md-12 add-banner">
+                    <div class="accessories_overlay"></div>
+                    <img src="img/all/accessories_add.jpg" alt="">
+                    <div class="accessories_banner">
+                        <h4>Accessories</h4>
+                        <p>Sale up to 75% off and Get an existing offer of<br>brand new collections</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//======= Blog Section Start=======//-->
+        <section class="wv-main-blog padT100 padB100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wv-heading-style1 pad-s15">
+                            <h2>latest from blog</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row pad-s15">
+                            <div class="owl-carousel-style1" id="blog-carousel">
+                                <div class="wa-item">
+                                    <div class="col-md-12">
+                                        <div class="wa-theme-design-block">
+                                            <figure class="dark-theme">
+                                                <img src="img/all/blog1.jpg" alt="Coupon Thumbnail">
+                                                <span class="block-sticker-tag">
+                                                    <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
+                                                </span>
+                                            </figure>
+                                            <div class="block-caption">
+                                                <div class="news_icon meta-info">
+                                                    <p><a href="">arun acharya</a></p>
+                                                    <p><a href="">21 comments</a></p>
+                                                </div>
+                                                <h4>Lorem ipsum dolor sit consectetur</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
+                                                <a href="blog.html" class="wv_text_button">Read more...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wa-item">
+                                    <div class="col-md-12">
+                                        <div class="wa-theme-design-block">
+                                            <figure class="dark-theme">
+                                                <img src="img/all/blog2.jpg" alt="Coupon Thumbnail">
+                                                <span class="block-sticker-tag">
+                                                    <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
+                                                </span>
+                                            </figure>
+                                            <div class="block-caption">
+                                                <div class="news_icon meta-info">
+                                                    <p><a href="">arun acharya</a></p>
+                                                    <p><a href="">21 comments</a></p>
+                                                </div>
+                                                <h4>Lorem ipsum dolor sit consectetur</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
+                                                <a href="blog.html" class="wv_text_button">Read more...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wa-item">
+                                    <div class="col-md-12">
+                                        <div class="wa-theme-design-block">
+                                            <figure class="dark-theme">
+                                                <img src="img/all/blog3.jpg" alt="Coupon Thumbnail">
+                                                <span class="block-sticker-tag">
+                                                    <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
+                                                </span>
+                                            </figure>
+                                            <div class="block-caption">
+                                                <div class="news_icon meta-info">
+                                                    <p><a href="">arun acharya</a></p>
+                                                    <p><a href="">21 comments</a></p>
+                                                </div>
+                                                <h4>Lorem ipsum dolor sit consectetur</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
+                                                <a href="blog.html" class="wv_text_button">Read more...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wa-item">
+                                    <div class="col-md-12">
+                                        <div class="wa-theme-design-block">
+                                            <figure class="dark-theme">
+                                                <img src="img/all/blog1.jpg" alt="Coupon Thumbnail">
+                                                <span class="block-sticker-tag">
+                                                    <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
+                                                </span>
+                                            </figure>
+                                            <div class="block-caption">
+                                                <div class="news_icon meta-info">
+                                                    <p><a href="">arun acharya</a></p>
+                                                    <p><a href="">21 comments</a></p>
+                                                </div>
+                                                <h4>Lorem ipsum dolor sit consectetur</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
+                                                <a href="blog.html" class="wv_text_button">Read more...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wa-item">
+                                    <div class="col-md-12">
+                                        <div class="wa-theme-design-block">
+                                            <figure class="dark-theme">
+                                                <img src="img/all/blog2.jpg" alt="Coupon Thumbnail">
+                                                <span class="block-sticker-tag">
+                                                    <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
+                                                </span>
+                                            </figure>
+                                            <div class="block-caption">
+                                                <div class="news_icon meta-info">
+                                                    <p><a href="">arun acharya</a></p>
+                                                    <p><a href="">21 comments</a></p>
+                                                </div>
+                                                <h4>Lorem ipsum dolor sit consectetur</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
+                                                <a href="blog.html" class="wv_text_button">Read more...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wa-item">
+                                    <div class="col-md-12">
+                                        <div class="wa-theme-design-block">
+                                            <figure class="dark-theme">
+                                                <img src="img/all/blog3.jpg" alt="Coupon Thumbnail">
+                                                <span class="block-sticker-tag">
+                                                    <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
+                                                </span>
+                                            </figure>
+                                            <div class="block-caption">
+                                                <div class="news_icon meta-info">
+                                                    <p><a href="">arun acharya</a></p>
+                                                    <p><a href="">21 comments</a></p>
+                                                </div>
+                                                <h4>Lorem ipsum dolor sit consectetur</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
+                                                <a href="blog.html" class="wv_text_button">Read more...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wa-item">
+                                    <div class="col-md-12">
+                                        <div class="wa-theme-design-block">
+                                            <figure class="dark-theme">
+                                                <img src="img/all/blog1.jpg" alt="Coupon Thumbnail">
+                                                <span class="block-sticker-tag">
+                                                    <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
+                                                </span>
+                                            </figure>
+                                            <div class="block-caption">
+                                                <div class="news_icon meta-info">
+                                                    <p><a href="">arun acharya</a></p>
+                                                    <p><a href="">21 comments</a></p>
+                                                </div>
+                                                <h4>Lorem ipsum dolor sit consectetur</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
+                                                <a href="blog.html" class="wv_text_button">Read more...</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1669,1868 +3172,323 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!--//==Women Section End==//-->
-            <!--//======= Banner_add Start =======//--> 
-            <section class="banner-add">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 add-banner">
-                            <div class="banner-left">
-                                <img src="img/all/banner_left.jpg" alt=""/>
-                            </div>
-                            <div class="left-banner-title">
-                                <h3>WOMEN TOP</h3>
-                                <p>SAVE UP TO 50% OFF</p>
-                                <button type="button" class="wv_button marT15">VIEW collection</button>
-                            </div>
+            </div>
+        </section>
+        <!--//======= Blog Section End=======//-->          
+        <!--//======= Service Start =======//--> 
+        <section class="Service">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 service_main">
+                        <div class="service_icon">
+                            <img src="img/icons/icon1.png" alt="">
                         </div>
-                        <div class="col-md-6 add-banner">
-                            <div class="banner-right">
-                                <img src="img/all/banner_right.jpg" alt=""/>
-                            </div>
-                            <div class="right-banner-title">
-                                <h3>MEN SUITS</h3>
-                                <p>SAVE UP TO 60% OFF</p>
-                                <button type="button" class="wv_button marT15">VIEW collection</button>
-                            </div>
+                        <div class="service_text">
+                            <h5>free shipping</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 service_main">
+                        <div class="service_icon">
+                            <img src="img/icons/icon2.png" alt="">
+                        </div>
+                        <div class="service_text">
+                            <h5>24/7 Support</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 service_main">
+                        <div class="service_icon">
+                            <img src="img/icons/icon3.png" alt="">
+                        </div>
+                        <div class="service_text">
+                            <h5>money back guarantee</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 service_main">
+                        <div class="service_icon">
+                            <img src="img/icons/icon4.png" alt="">
+                        </div>
+                        <div class="service_text">
+                            <h5>free gift coupons</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!--//======= Banner_add Start End =======//--> 
-            <!--//======= Men Section Start=======//-->
-            <!--//==Men Section Start==//-->
-            <section class="login-page padTB100">
+            </div>
+        </section>
+        <!--//======= Service End =======//--> 
+        <!--//=======Footer Start=======//--> 
+        <footer id="main-footer"  class="dark-footer">
+            <!--Upper Footer Block-->
+            <div class="upper-footer wv_footer">
                 <div class="container">
                     <div class="row pad-s15">
-                        <div class="col-md-12">
-                            <div class="wv-heading-style2">
-                                <h2>Phái Mạnh</h2>
+                        <!--Widget Block-->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget contact-widget">
+                                <h3>Contact</h3>
+                                <p><span class="square-icon"><i class="fa fa-map-marker"></i></span>PO Box 16122 Collins Street <br>
+                                    West Victoria 8007 Australia
+                                </p>
+                                <p><span class="square-icon"><i class="fa fa-phone"></i></span>+61 3 8376 6284 <br>
+                                    +61 3 8376 6284
+                                </p>
+                                <p><span class="square-icon"><i class="fa fa-envelope-o"></i></span>+61 3 8376 6284<br>
+                                    +61 3 8376 6284
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <!--wa Info Tabs-->
-                            <div class="wa-info-tabs">
-                                <!--wa Tabs-->
-                                <div class="wa-tabs category-tab" id="wa-tabs1">
-                                    <!--Tab Btns-->
-                                    <div class="wv_tab_btns clearfix">
-                                        <a href="#wa-accessories1" class="mens_btn tab-btn wv_tbtn active-btn">Phụ Kiện</a>
-                                        <a href="#wa-latest1" class="mens_btn tab-btn wv_tbtn">latest arrival</a>
-                                        <a href="#wa-best1" class="mens_btn tab-btn wv_tbtn">best seller</a>
-                                        <a href="#wa-popular1" class="mens_btn tab-btn wv_tbtn">most popular</a>
-                                    </div>
-                                    <!--Tabs Container-->
-                                    <div class="tabs-container wv_tabs_container">
-                                        <div class="row">
-                                            <!--Tab first Content item Start-->
-                                            <div class="tab active-tab mens_tab" id="wa-accessories1">
-                                                <div class="owl-carousel-style1" id="men-carousel">
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men1.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men2.jpg" alt="Men Thumbnail">
-                                                                    <div class="ribbon"><span>New</span></div>
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men3.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men4.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men1.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men2.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men3.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men4.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--Tab first Content item End-->
-                                            <!--Tab second Content item Start-->
-                                            <div class="tab mens_tab" id="wa-latest1">
-                                                <div class="owl-carousel-style1" id="men-latest">
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men2.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men1.jpg" alt="Men Thumbnail">
-                                                                    <div class="ribbon"><span>New</span></div>
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men3.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men4.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men1.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men2.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag2"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men3.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men4.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--Tab second Content item End-->
-                                            <!--Tab third Content item Start-->
-                                            <div class="tab mens_tab" id="wa-best1">
-                                                <div class="owl-carousel-style1" id="men-best">
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men3.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men1.jpg" alt="Men Thumbnail">
-                                                                    <div class="ribbon"><span>New</span></div>
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men2.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men4.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men1.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men2.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men3.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men4.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--Tab third Content item End-->
-                                            <!--Tab forth Content item Start-->
-                                            <div class="tab mens_tab" id="wa-popular1">
-                                                <div class="owl-carousel-style1" id="men-popular">
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men4.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men1.jpg" alt="Men Thumbnail">
-                                                                    <div class="ribbon"><span>New</span></div>
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men2.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men3.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men1.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men2.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men3.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wa-item">
-                                                        <div class="col-md-12">
-                                                            <div class="wa-theme-design-block">
-                                                                <figure class="dark-theme">
-                                                                    <img src="img/men/men4.jpg" alt="Men Thumbnail">
-                                                                    <span class="block-sticker-tag1">
-                                                                        <span class="off_tag"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></span>
-                                                                    </span> 
-                                                                    <span class="block-sticker-tag2">                                      
-                                                                        <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                    <span class="block-sticker-tag3">
-                                                                        <span class="off_tag2 btn-action btn-quickview" data-toggle="modal" data-target="#quickView"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></span>
-                                                                    </span>
-                                                                </figure>
-                                                                <div class="block-caption1">
-                                                                    <h4>Lorem Crochet Applique Ipsum</h4>
-                                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                        <span class="price-text-color ">T-shirt</span>
-                                                                    </div>
-                                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                        <ul class="wv_rating">
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><i class="fa fa-star"></i></li>
-                                                                            <li><span class="review">1 review</span></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="clear"></div>
-                                                                    <div class="price col-md-12">
-                                                                        <span class="sell-price">$120.00</span>
-                                                                        <span class="actual-price">$170.00</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--Tab forth Content item End-->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--//==Men Section End==//-->  
-            <section class="accessories-add">
-                <div class="container">
-                    <div class="col-md-12 add-banner">
-                        <div class="accessories_overlay"></div>
-                        <img src="img/all/accessories_add.jpg" alt="">
-                        <div class="accessories_banner">
-                            <h4>Accessories</h4>
-                            <p>Sale up to 75% off and Get an existing offer of<br>brand new collections</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--//======= Blog Section Start=======//-->
-            <section class="wv-main-blog padT100 padB100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="wv-heading-style1 pad-s15">
-                                <h2>latest from blog</h2>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="row pad-s15">
-                                <div class="owl-carousel-style1" id="blog-carousel">
-                                    <div class="wa-item">
-                                        <div class="col-md-12">
-                                            <div class="wa-theme-design-block">
-                                                <figure class="dark-theme">
-                                                    <img src="img/all/blog1.jpg" alt="Coupon Thumbnail">
-                                                    <span class="block-sticker-tag">
-                                                        <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
-                                                    </span>
-                                                </figure>
-                                                <div class="block-caption">
-                                                    <div class="news_icon meta-info">
-                                                        <p><a href="">arun acharya</a></p>
-                                                        <p><a href="">21 comments</a></p>
-                                                    </div>
-                                                    <h4>Lorem ipsum dolor sit consectetur</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
-                                                    <a href="blog.html" class="wv_text_button">Read more...</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wa-item">
-                                        <div class="col-md-12">
-                                            <div class="wa-theme-design-block">
-                                                <figure class="dark-theme">
-                                                    <img src="img/all/blog2.jpg" alt="Coupon Thumbnail">
-                                                    <span class="block-sticker-tag">
-                                                        <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
-                                                    </span>
-                                                </figure>
-                                                <div class="block-caption">
-                                                    <div class="news_icon meta-info">
-                                                        <p><a href="">arun acharya</a></p>
-                                                        <p><a href="">21 comments</a></p>
-                                                    </div>
-                                                    <h4>Lorem ipsum dolor sit consectetur</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
-                                                    <a href="blog.html" class="wv_text_button">Read more...</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wa-item">
-                                        <div class="col-md-12">
-                                            <div class="wa-theme-design-block">
-                                                <figure class="dark-theme">
-                                                    <img src="img/all/blog3.jpg" alt="Coupon Thumbnail">
-                                                    <span class="block-sticker-tag">
-                                                        <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
-                                                    </span>
-                                                </figure>
-                                                <div class="block-caption">
-                                                    <div class="news_icon meta-info">
-                                                        <p><a href="">arun acharya</a></p>
-                                                        <p><a href="">21 comments</a></p>
-                                                    </div>
-                                                    <h4>Lorem ipsum dolor sit consectetur</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
-                                                    <a href="blog.html" class="wv_text_button">Read more...</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wa-item">
-                                        <div class="col-md-12">
-                                            <div class="wa-theme-design-block">
-                                                <figure class="dark-theme">
-                                                    <img src="img/all/blog1.jpg" alt="Coupon Thumbnail">
-                                                    <span class="block-sticker-tag">
-                                                        <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
-                                                    </span>
-                                                </figure>
-                                                <div class="block-caption">
-                                                    <div class="news_icon meta-info">
-                                                        <p><a href="">arun acharya</a></p>
-                                                        <p><a href="">21 comments</a></p>
-                                                    </div>
-                                                    <h4>Lorem ipsum dolor sit consectetur</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
-                                                    <a href="blog.html" class="wv_text_button">Read more...</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wa-item">
-                                        <div class="col-md-12">
-                                            <div class="wa-theme-design-block">
-                                                <figure class="dark-theme">
-                                                    <img src="img/all/blog2.jpg" alt="Coupon Thumbnail">
-                                                    <span class="block-sticker-tag">
-                                                        <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
-                                                    </span>
-                                                </figure>
-                                                <div class="block-caption">
-                                                    <div class="news_icon meta-info">
-                                                        <p><a href="">arun acharya</a></p>
-                                                        <p><a href="">21 comments</a></p>
-                                                    </div>
-                                                    <h4>Lorem ipsum dolor sit consectetur</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
-                                                    <a href="blog.html" class="wv_text_button">Read more...</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wa-item">
-                                        <div class="col-md-12">
-                                            <div class="wa-theme-design-block">
-                                                <figure class="dark-theme">
-                                                    <img src="img/all/blog3.jpg" alt="Coupon Thumbnail">
-                                                    <span class="block-sticker-tag">
-                                                        <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
-                                                    </span>
-                                                </figure>
-                                                <div class="block-caption">
-                                                    <div class="news_icon meta-info">
-                                                        <p><a href="">arun acharya</a></p>
-                                                        <p><a href="">21 comments</a></p>
-                                                    </div>
-                                                    <h4>Lorem ipsum dolor sit consectetur</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
-                                                    <a href="blog.html" class="wv_text_button">Read more...</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wa-item">
-                                        <div class="col-md-12">
-                                            <div class="wa-theme-design-block">
-                                                <figure class="dark-theme">
-                                                    <img src="img/all/blog1.jpg" alt="Coupon Thumbnail">
-                                                    <span class="block-sticker-tag">
-                                                        <span class="off_tag"><strong>15 <span class="clear">April</span></strong></span>
-                                                    </span>
-                                                </figure>
-                                                <div class="block-caption">
-                                                    <div class="news_icon meta-info">
-                                                        <p><a href="">arun acharya</a></p>
-                                                        <p><a href="">21 comments</a></p>
-                                                    </div>
-                                                    <h4>Lorem ipsum dolor sit consectetur</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fermentum erosat .</p>
-                                                    <a href="blog.html" class="wv_text_button">Read more...</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--//======= Blog Section End=======//-->          
-            <!--//======= Service Start =======//--> 
-            <section class="Service">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3 service_main">
-                            <div class="service_icon">
-                                <img src="img/icons/icon1.png" alt="">
-                            </div>
-                            <div class="service_text">
-                                <h5>free shipping</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 service_main">
-                            <div class="service_icon">
-                                <img src="img/icons/icon2.png" alt="">
-                            </div>
-                            <div class="service_text">
-                                <h5>24/7 Support</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 service_main">
-                            <div class="service_icon">
-                                <img src="img/icons/icon3.png" alt="">
-                            </div>
-                            <div class="service_text">
-                                <h5>money back guarantee</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 service_main">
-                            <div class="service_icon">
-                                <img src="img/icons/icon4.png" alt="">
-                            </div>
-                            <div class="service_text">
-                                <h5>free gift coupons</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--//======= Service End =======//--> 
-            <!--//=======Footer Start=======//--> 
-            <footer id="main-footer"  class="dark-footer">
-                <!--Upper Footer Block-->
-                <div class="upper-footer wv_footer">
-                    <div class="container">
-                        <div class="row pad-s15">
-                            <!--Widget Block-->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="widget contact-widget">
-                                    <h3>Contact</h3>
-                                    <p><span class="square-icon"><i class="fa fa-map-marker"></i></span>PO Box 16122 Collins Street <br>
-                                        West Victoria 8007 Australia
-                                    </p>
-                                    <p><span class="square-icon"><i class="fa fa-phone"></i></span>+61 3 8376 6284 <br>
-                                        +61 3 8376 6284
-                                    </p>
-                                    <p><span class="square-icon"><i class="fa fa-envelope-o"></i></span>+61 3 8376 6284<br>
-                                        +61 3 8376 6284
-                                    </p>
-                                </div>
-                            </div>
-                            <!--Widget Block-->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="widget">
-                                    <h3>Account Info</h3>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> My Account</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Wishlist</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Order Detail</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Gift Card</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Offers</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Track Order</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Return Policy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--Widget Block-->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="widget">
-                                    <h3>Category</h3>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Women</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Man</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Accessories</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Shoes</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Watch</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Sunglasses</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Shocks</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--Widget Block-->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="widget">
-                                    <h3>Information</h3>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Products</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Advanced Search</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Site Map</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> FAQ</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Location</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Terms & Condition</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Privacy Policy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-12 wv_social">
-                                <ul class="col-md-12 social">
-                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href=""><i class="fa fa-behance"></i></a></li>
+                        <!--Widget Block-->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h3>Account Info</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> My Account</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Wishlist</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Order Detail</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Gift Card</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Offers</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Track Order</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Return Policy</a></li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--Copyright Footer Block-->
-                <div class="bottom-footer">
-                    <div class="container">
-                        <div class="row pad-s15">
-                            <div class="col-md-6 copy-right">
-                                <p>Copyright © 2017 My Shop All Rights Reserved</p>
-                            </div>
-                            <div class="col-md-6 payment-method text-right">
-                                <ul class="col-md-12 wv_pay">
-                                    <li><a href=""></a><img src="img/icons/pay1.png" alt=""></li>
-                                    <li><a href=""></a><img src="img/icons/pay2.png" alt=""></li>
-                                    <li><a href=""></a><img src="img/icons/pay3.png" alt=""></li>
-                                    <li><a href=""></a><img src="img/icons/pay4.png" alt=""></li>
-                                    <li><a href=""></a><img src="img/icons/pay5.png" alt=""></li>
+                        <!--Widget Block-->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h3>Category</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Women</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Man</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Accessories</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Shoes</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Watch</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Sunglasses</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Shocks</a></li>
                                 </ul>
                             </div>
                         </div>
+                        <!--Widget Block-->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h3>Information</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Products</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Advanced Search</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Site Map</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> FAQ</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Location</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Terms & Condition</a></li>
+                                    <li><a href="#"><i class="fa fa-circle-o wv_circle"></i> Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12 wv_social">
+                            <ul class="col-md-12 social">
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fa fa-behance"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </footer>
-            <!--//=======Footer End=======//--> 
-            <div id="quickView" class="modal quickView" role="dialog">
-                <div class="modal-dialog">
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <button type="button" class="close-modal" data-dismiss="modal">×</button>
-                        <div class="modal-body">
-                            <div class="quick-view-container">
-                                <!--//==Product Item Start==//-->
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="wa-theme-design-block">
-                                        <div class="col-md-6 wv_list_img">
-                                            <div class="item_left_slider product--image">
-                                                <div class="single_display_image"> 
-                                                    <img class="display-img" alt="" src="img/product/product1.jpg"/> 
-                                                </div>
-                                                <div class="icon-images"> 
-                                                    <a href="img/product/product1.jpg"> 
-                                                        <img src="img/product/small_product1.jpg" alt="small_product1"/></a> 
-                                                        <a href="img/product/product2.jpg"> <img src="img/product/small_product2.jpg" alt="small_product2"/></a> 
-                                                        <a href="img/product/product1.jpg"> <img src="img/product/small_product1.jpg" alt="small_product3"/></a> 
-                                                        <a href="img/product/product2.jpg"> <img src="img/product/small_product2.jpg" alt="small_product4"/></a>
-                                                    </div>
+            </div>
+            <!--Copyright Footer Block-->
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="row pad-s15">
+                        <div class="col-md-6 copy-right">
+                            <p>Copyright © 2017 My Shop All Rights Reserved</p>
+                        </div>
+                        <div class="col-md-6 payment-method text-right">
+                            <ul class="col-md-12 wv_pay">
+                                <li><a href=""></a><img src="img/icons/pay1.png" alt=""></li>
+                                <li><a href=""></a><img src="img/icons/pay2.png" alt=""></li>
+                                <li><a href=""></a><img src="img/icons/pay3.png" alt=""></li>
+                                <li><a href=""></a><img src="img/icons/pay4.png" alt=""></li>
+                                <li><a href=""></a><img src="img/icons/pay5.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--//=======Footer End=======//--> 
+        <div id="quickView" class="modal quickView" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <button type="button" class="close-modal" data-dismiss="modal">×</button>
+                    <div class="modal-body">
+                        <div class="quick-view-container">
+                            <!--//==Product Item Start==//-->
+                            <div class="col-md-12 col-sm-12">
+                                <div class="wa-theme-design-block">
+                                    <div class="col-md-6 wv_list_img">
+                                        <div class="item_left_slider product--image">
+                                            <div class="single_display_image"> 
+                                                <img class="display-img" alt="" src="img/product/product1.jpg"/> 
+                                            </div>
+                                            <div class="icon-images"> 
+                                                <a href="img/product/product1.jpg"> 
+                                                    <img src="img/product/small_product1.jpg" alt="small_product1"/></a> 
+                                                    <a href="img/product/product2.jpg"> <img src="img/product/small_product2.jpg" alt="small_product2"/></a> 
+                                                    <a href="img/product/product1.jpg"> <img src="img/product/small_product1.jpg" alt="small_product3"/></a> 
+                                                    <a href="img/product/product2.jpg"> <img src="img/product/small_product2.jpg" alt="small_product4"/></a>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 wv_list_text wv_single_text">
-                                                <div class="block-caption1 wv_single_heading">
-                                                    <h4 class="responsive_single_title">Lorem Crochet Applique</h4>
-                                                    <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                        <span class="price-text-color ">T-shirt</span>
-                                                    </div>
-                                                    <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                        <ul class="wv_rating">
-                                                            <li><i class="fa fa-star"></i></li>
-                                                            <li><i class="fa fa-star"></i></li>
-                                                            <li><i class="fa fa-star"></i></li>
-                                                            <li><i class="fa fa-star"></i></li>
-                                                            <li><i class="fa fa-star"></i></li>
-                                                            <li><span class="review">1 review</span></li>
-                                                        </ul>
+                                        </div>
+                                        <div class="col-md-6 wv_list_text wv_single_text">
+                                            <div class="block-caption1 wv_single_heading">
+                                                <h4 class="responsive_single_title">Lorem Crochet Applique</h4>
+                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
+                                                    <span class="price-text-color ">T-shirt</span>
+                                                </div>
+                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
+                                                    <ul class="wv_rating">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><span class="review">1 review</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="clear"></div>
+                                                <div class="price list_price col-md-12">
+                                                    <span class="sell-price">$120.00</span>
+                                                    <span class="actual-price">$170.00</span>
+                                                    <h3>Overview:</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                                                    <div class="single_specification">
+                                                        <div class="col-xs-3 col-md-3 single_color_left">
+                                                            <h4>Color:</h4>
+                                                        </div>
+                                                        <div class="col-xs-9 col-md-9 single_color_right wv_widget">
+                                                            <ul class="wv_choose_color">
+                                                                <li>
+                                                                    <input type="checkbox" class="red" name="red" id="beige1">
+                                                                    <label class="form-label" for="beige1"></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" class="pink" name="pink" id="white1">
+                                                                    <label for="white1"></label>
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" class="purple" name="purple" id="black1">
+                                                                    <label for="black1"></label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                     <div class="clear"></div>
-                                                    <div class="price list_price col-md-12">
-                                                        <span class="sell-price">$120.00</span>
-                                                        <span class="actual-price">$170.00</span>
-                                                        <h3>Overview:</h3>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-                                                        <div class="single_specification">
-                                                            <div class="col-xs-3 col-md-3 single_color_left">
-                                                                <h4>Color:</h4>
-                                                            </div>
-                                                            <div class="col-xs-9 col-md-9 single_color_right wv_widget">
-                                                                <ul class="wv_choose_color">
-                                                                    <li>
-                                                                        <input type="checkbox" class="red" name="red" id="beige1">
-                                                                        <label class="form-label" for="beige1"></label>
-                                                                    </li>
-                                                                    <li>
-                                                                        <input type="checkbox" class="pink" name="pink" id="white1">
-                                                                        <label for="white1"></label>
-                                                                    </li>
-                                                                    <li>
-                                                                        <input type="checkbox" class="purple" name="purple" id="black1">
-                                                                        <label for="black1"></label>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                                    <div class="single_specification">
+                                                        <div class="col-xs-3 col-md-3 single_size_left">
+                                                            <h4>Size:</h4>
                                                         </div>
-                                                        <div class="clear"></div>
-                                                        <div class="single_specification">
-                                                            <div class="col-xs-3 col-md-3 single_size_left">
-                                                                <h4>Size:</h4>
-                                                            </div>
-                                                            <div class="col-xs-9 col-md-9 single_color_right wv_widget">
-                                                                <ul class="wv_size">
-                                                                    <li><a href="#">xs</a></li>
-                                                                    <li><a href="#">s</a></li>
-                                                                    <li><a href="#">m</a></li>
-                                                                    <li><a href="#">l</a></li>
-                                                                </ul>
-                                                            </div>
+                                                        <div class="col-xs-9 col-md-9 single_color_right wv_widget">
+                                                            <ul class="wv_size">
+                                                                <li><a href="#">xs</a></li>
+                                                                <li><a href="#">s</a></li>
+                                                                <li><a href="#">m</a></li>
+                                                                <li><a href="#">l</a></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="clear"></div>
-                                                        <div class="show-item wv_grid_right wv_single_numproduct">
-                                                            <div class="box-option responsive_box">
-                                                                <select>
-                                                                    <option>12</option>
-                                                                    <option>18</option>
-                                                                    <option>24</option>
-                                                                </select>
-                                                                <span class="icon"></span>
-                                                            </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                    <div class="show-item wv_grid_right wv_single_numproduct">
+                                                        <div class="box-option responsive_box">
+                                                            <select>
+                                                                <option>12</option>
+                                                                <option>18</option>
+                                                                <option>24</option>
+                                                            </select>
+                                                            <span class="icon"></span>
                                                         </div>
-                                                        <ul class="shop_list_icon wv_single_icon">
-                                                            <li><a href="">ADD TO CART</a></li>
-                                                            <li><a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
-                                                        </ul>
-                                                        <div class="single_specification specification_social">
-                                                            <div class="col-xs-3 col-md-3 single_social_left">
-                                                                <h4>Share:</h4>
-                                                            </div>
-                                                            <div class="col-xs-9 col-md-9 single_color_right wv_widget">
-                                                                <ul class="wv_single_social">
-                                                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                                    <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                                                </ul>
-                                                            </div>
+                                                    </div>
+                                                    <ul class="shop_list_icon wv_single_icon">
+                                                        <li><a href="">ADD TO CART</a></li>
+                                                        <li><a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                                                    </ul>
+                                                    <div class="single_specification specification_social">
+                                                        <div class="col-xs-3 col-md-3 single_social_left">
+                                                            <h4>Share:</h4>
+                                                        </div>
+                                                        <div class="col-xs-9 col-md-9 single_color_right wv_widget">
+                                                            <ul class="wv_single_social">
+                                                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="clear"></div>
                                     </div>
-                                    <!--//==Product Item End==//-->
+                                    <div class="clear"></div>
                                 </div>
+                                <!--//==Product Item End==//-->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal_backdrop"></div>
-                <!-- Switcher Section Start -->
-                <div id="style-switcher">
-                    <h2>Choose Color<a href="#"><i class="fa fa-cog fa-spin"></i></a></h2>
-                    <div>
-                        <ul class="colors" id="color1">
-                            <li>
-                                <a href="#" class="color"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="color1"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="color2"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="color3"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="color4"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="color5"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="color6"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="color7"></a>
-                            </li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="modal_backdrop"></div>
+            <!-- Switcher Section Start -->
+            <div id="style-switcher">
+                <h2>Choose Color<a href="#"><i class="fa fa-cog fa-spin"></i></a></h2>
+                <div>
+                    <ul class="colors" id="color1">
+                        <li>
+                            <a href="#" class="color"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="color1"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="color2"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="color3"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="color4"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="color5"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="color6"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="color7"></a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- / Switcher Section End -->
-                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-                <script src="js/jquery.min.js"></script>
-                <!-- Include all compiled plugins (below), or include individual files as needed -->
-                <script src="js/bootstrap.min.js"></script>
-                <!-- jQuery plugins library-->
-                <script type="text/javascript" src="js/hover-dropdown-menu.js"></script> 
-                <script type="text/javascript" src="js/jquery.hover-dropdown-menu-addon.js"></script>   
-                <script src="js/owl.carousel.js"></script>  
-                <script type="text/javascript" src="js/jquery.countTo.js"></script> 
-                <script type="text/javascript" src="js/jquery.appear.js"></script>   
-                <script src="js/jquery.mixitup.js"></script>   
-                <script src="js/jquery.fancybox.pack.js"></script>
-                <script src="js/jquery.fancybox-media.js"></script>
-                <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
-                <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
-                <script type="text/javascript" src="js/switcher.js"></script> 
-                <!-- Custom JS -->
-                <script type="text/javascript" src="js/main.js"></script> 
-
-    <script type="text/javascript">
-        function updateCatalog(id){
-            $('#update').modal('show');
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-
-            event.preventDefault();
-            var name = $('#name').val();
-            var content = $('#content').val();
-            $.ajax({
-                url: '{{ route('edit_catalog')}}',
-                type: 'POST',
-                dataType: 'JSON',
-                data: {id : id},
-                success:function(res){
-                    var data = res.data;
-
-                    $('#nameUpdate').val(data.name)
-                    $('#contentUpdate').val(data.content)
-                    $('#idUpdate').val(data.id)
-                }
-            });
-
-        }
-
-    </script>
-            </body>
-            </html>
+            </div>
+            <!-- / Switcher Section End -->
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="js/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
+            <!-- jQuery plugins library-->
+            <script type="text/javascript" src="js/hover-dropdown-menu.js"></script> 
+            <script type="text/javascript" src="js/jquery.hover-dropdown-menu-addon.js"></script>   
+            <script src="js/owl.carousel.js"></script>  
+            <script type="text/javascript" src="js/jquery.countTo.js"></script> 
+            <script type="text/javascript" src="js/jquery.appear.js"></script>   
+            <script src="js/jquery.mixitup.js"></script>   
+            <script src="js/jquery.fancybox.pack.js"></script>
+            <script src="js/jquery.fancybox-media.js"></script>
+            <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+            <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+            <script type="text/javascript" src="js/switcher.js"></script> 
+            <!-- Custom JS -->
+            <script type="text/javascript" src="js/main.js"></script> 
+        </body>
+        </html>

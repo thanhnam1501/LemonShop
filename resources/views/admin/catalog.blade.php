@@ -269,7 +269,6 @@
 				data: {id : id},
 				success:function(res){
 					var data = res.data;
-
 					$('#nameUpdate').val(data.name)
 					$('#contentUpdate').val(data.content)
 					$('#idUpdate').val(data.id)

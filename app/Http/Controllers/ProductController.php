@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 use App\Catalog;
+use App\Supplier;
 use App\Http\Controllers\Controller;
 
 class ProductController extends Controller
@@ -13,7 +14,8 @@ class ProductController extends Controller
         $data['status'] = '0';
         $data = Product::create($data);
         $catalogs = Catalog::get();
-        return view('admin/AddProduct', ['catalogs' => $catalogs]);
+        $suppliers = Supplier::get();
+        return view('admin/AddProduct', ['catalogs' => $catalogs, 'suppliers' => $suppliers, 'data' => $data]);
     }
 
     public function store(Request $request) {
@@ -26,8 +28,7 @@ class ProductController extends Controller
             $path = $request->file('image_link')->store('image_link');
             $data['image_link'] = $path;
         };
-        // dd($data);
-    $products = Product::create($data);
+    $products = Product::find($data['id'])->update($data);
     return redirect()->route('show_product');
     // return view('admin/EditProduct', ['products' => $products, 'catalogs' => $catalogs]);
     }

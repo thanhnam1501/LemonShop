@@ -50,7 +50,7 @@
 	  <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
 </head>
 
-<body class="no-skin">
+<body class="no-skin" >
 	<div id="navbar" class="navbar navbar-default          ace-save-state">
 		<div class="navbar-container ace-save-state" id="navbar-container">
 			<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
@@ -859,7 +859,7 @@
 							</h1>
 					
 							--}}
-							<div class="row">
+							<div class="row" style="background-color: rgb(241, 241, 241)!important;">
 								<div class="col-xs-12">
 									<!-- PAGE CONTENT BEGINS -->
 

@@ -1,15 +1,15 @@
 @extends('layout.app')
 @section('content')
-
+<div class="rows" >
 <form action="{{route('add_product')}}" method="POST" class="form-horizontal" role="form" enctype="multipart/form-data">
 	<table class="table table-hover">
 		<tbody>
-			<tr>
+			<tr class="">
 				<td>
-					<input type="hidden" name="id" value="">
+					<input type="hidden" name="id" value="{{$data->id}}">
 					<h3>Thêm sản phẩm mới</h3>
 					<div class="form-group">
-						<div class="col-sm-9" >
+						<div class="col-sm-12" >
 							<input type="text" class="form-control" placeholder="Tên Sản Phẩm" name="name"  />
 						</div>
 					</div>
@@ -55,6 +55,31 @@
 
 	<tr>
 		<td>
+			<div class="col-sm-6">
+
+				<h4>Danh mục sản phẩm</h4>
+				<select name="catalog_id">
+					@foreach($catalogs as $catalog)
+					<option value="{{$catalog->id}}">{{$catalog->name}}</option>
+					@endforeach
+				</select>
+
+			</div>
+			<div class="col-sm-6">
+
+				<h4>Nhà Cung Cấp</h4>
+				<select name="supplier_id">
+					@foreach($suppliers as $supplier)
+					<option value="{{$supplier->id}}">{{$supplier->name}}</option>
+					@endforeach
+				</select>
+
+			</div>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
 
 			<div class="col-sm-4">
 				<div class="widget-box">
@@ -81,21 +106,7 @@
 		</td>
 	</tr>
 
-	<tr>
-		<td>
-
-			<div>
-
-				<h4>Danh mục sản phẩm</h4>
-				<select name="catalog_id">
-					@foreach($catalogs as $catalog)
-					<option value="{{$catalog->id}}">{{$catalog -> name}}</option>
-					@endforeach
-				</select>
-
-			</div>
-		</td>
-	</tr>
+	
 </tbody>
 </table>
 
@@ -103,31 +114,32 @@
 
 <button type="submit" class="btn btn-primary">Đăng Bài Viết</button>
 </form>
+</div>
 
 
 @endsection
 @section('script')
-		<!-- inline scripts related to this page -->
-		<script type="text/javascript">
-			jQuery(function($){
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
+	jQuery(function($){
 
-				$('textarea[data-provide="markdown"]').each(function(){
-					var $this = $(this);
+		$('textarea[data-provide="markdown"]').each(function(){
+			var $this = $(this);
 
-					if ($this.data('markdown')) {
-						$this.data('markdown').showEditor();
-					}
-					else $this.markdown()
+			if ($this.data('markdown')) {
+				$this.data('markdown').showEditor();
+			}
+			else $this.markdown()
 
-						$this.parent().find('.btn').addClass('btn-white');
-				})
+				$this.parent().find('.btn').addClass('btn-white');
+		})
 
 
 
-				function showErrorAlert (reason, detail) {
-					var msg='';
-					if (reason==='unsupported-file-type') { msg = "Unsupported format " +detail; }
-					else {
+		function showErrorAlert (reason, detail) {
+			var msg='';
+			if (reason==='unsupported-file-type') { msg = "Unsupported format " +detail; }
+			else {
 			//console.log("error uploading file", reason, detail);
 		}
 		$('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>'+ 

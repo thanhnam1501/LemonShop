@@ -12,25 +12,16 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
-
-
-Route::get('dang-nhap', function(){
-	return view('login');
-})->name('login');
 Route::prefix('admin')->group(function(){
 	Route::get('/', 'AdminController@index')->name('admin.dashboard');
 	Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
-    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
-    Route::get('/', 'AdminController@index')->name('admin.dashboard');
+	Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+	Route::get('/', 'AdminController@index')->name('admin.dashboard');
 
 	// // login admin
 	// Route::get('/login', 'Auth\AdminLoginController@getlogin')->name('admin.login');
 	// Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('admin.logout');
-
-	
-
-
+	Route::get('logout', 'Auth\LoginController@logout')->name('admin.logout');
 
 	/* Các route về sản phẩm*/
 	Route::group(
@@ -75,9 +66,9 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name(
 		Route::get('them-nguoi-quan-ly', function() { return view('admin\AddAdmin');})->name('form_add_admin');
 		Route::post('them-nguoi-quan-ly', 'AdminController@store')->name('add_admin');
 
-		});
-
 	});
+
+});
 // 	Route::prefix('nguoi-dung')->group(function(){
 // 		//Xử lý chức năng khách hàng (user)
 // 		Route::get('khach-hang', 'UserController@show')->name('show_customer');
@@ -92,12 +83,18 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name(
 // 	});
 // })->middleware('admin');
 
-Route::get('/checkout', 'CartController@getCheckOut');
-Route::post('/checkout', 'CartController@postCheckOut');
+Route::get('/checkout', 'CartController@getCheckOut')->name('get.checkout');
+Route::post('/checkout', 'CartController@postCheckOut')->name('post.checkout');
 Route::get('test', function(){
 	return view ('detail');	
 });
-Route::post('/cart', 'CartController@cart')->name('shopping_cart');
-Route::post('/cart-remove', 'CartController@cart_remove')->name('remove_cart');
+Route::post('thong-tin-san-pham', 'HomeController@homeShowProduct')->name('home.show.product');
+Route::get('danh-muc/{slug}', 'HomeController@getProductByCatalog')->name('home.show.product.by.catalog');
+Route::get('/cart', 'CartController@cart')->name('shopping.cart');
+Route::post('/cart-add', 'CartController@addToCart')->name('add.to.cart');
+Route::post('/cart-remove/', 'CartController@cart_remove')->name('remove.cart');
 Auth::routes();
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('get.user.login');
+Route::post('/login', 'Auth\LoginController@login')->name('post.user.login');
+Route::get('/logout', 'Auth\LoginController@logout')->name('get.user.logout');
 Route::get('/home', 'HomeController@index');

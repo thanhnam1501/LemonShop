@@ -34,7 +34,7 @@ class HomeController extends Controller
         $products_houseware_best = Product::orderBy('qty_sold','DESC')->where('catalog_id',3)->get();
         $products_houseware_popular = Product::orderBy('view','DESC')->where('catalog_id',3)->get();
         $catalogs = Catalog::get();
-        
+        $suppliers = Supplier::get();
         return view('home', [
             'products_food'=> $products_food,
             'products_food_best'=> $products_food_best,
@@ -43,6 +43,7 @@ class HomeController extends Controller
             'products_houseware_best'=> $products_houseware_best,
             'products_houseware_popular'=> $products_houseware_popular,
             'catalogs' => $catalogs,
+             'suppliers' => $suppliers,
         ]);
     } 
     public function homeShowProduct(Request $request){
@@ -63,6 +64,13 @@ class HomeController extends Controller
         $catalog = Catalog::where('slug',$slug)->first();
         $products = Product::where('catalog_id', $catalog['id'])->get();
         $catalogs = Catalog::get(); 
-        return view('home', ['products'=> $products, 'catalogs' => $catalogs] );
+        return view('catalog-view', ['products'=> $products, 'catalogs' => $catalogs] );
+    }
+    public function getProductBySupplier($slug){
+        $supplier = Supplier::where('slug',$slug)->first();
+        $products = Product::where('supplier_id', $supplier['id'])->get();
+        $catalogs = Catalog::get();
+        $suppliers = Supplier::get(); 
+        return view('catalog-view', ['products'=> $products, 'catalogs' => $catalogs, 'suppliers' => $suppliers] );
     }
 }

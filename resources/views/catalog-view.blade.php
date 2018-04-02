@@ -245,7 +245,7 @@
                                 <!--Tab first Content item Start-->
                                 <div class="tab womens_tab" id="wa-latest">
                                     <div class="owl-carousel-style1" id="women-latest">
-                                        @foreach($products_food as $product)
+                                        @foreach($products as $product)
                                         <div class="wa-item">
                                             <div class="col-md-12">
                                                 <div class="wa-theme-design-block">
@@ -300,7 +300,7 @@
                                         <!--Tab second Content item Start-->
                                         <div class="tab womens_tab active-tab" id="wa-accessories">
                                             <div class="owl-carousel-style1" id="women-carousel">
-                                              @foreach($products_food as $product)
+                                              @foreach($products as $product)
                                         <div class="wa-item">
                                             <div class="col-md-12">
                                                 <div class="wa-theme-design-block">
@@ -357,7 +357,7 @@
                                         <!--Tab third Content item Start-->
                                         <div class="tab womens_tab" id="wa-best">
                                             <div class="owl-carousel-style1" id="women-best">
-                                                @foreach($products_food_best as $product)
+                                                @foreach($products as $product)
                                         <div class="wa-item">
                                             <div class="col-md-12">
                                                 <div class="wa-theme-design-block">
@@ -412,7 +412,7 @@
                                         <!--Tab forth Content item Start-->
                                         <div class="tab womens_tab " id="wa-popular">
                                             <div class="owl-carousel-style1" id="women-popular">
-                                                    @foreach($products_food_popular as $product)
+                                                    @foreach($products as $product)
                                         <div class="wa-item">
                                             <div class="col-md-12">
                                                 <div class="wa-theme-design-block">
@@ -503,258 +503,7 @@
         <!--//======= Banner_add Start End =======//--> 
         <!--//======= Men Section Start=======//-->
         <!--//==Men Section Start==//-->
-        <section class="login-page padTB100">
-            <div class="container">
-                <div class="row pad-s15">
-                    <div class="col-md-12">
-                        <div class="wv-heading-style2">
-                            <h2>Đồ Gia Dụng</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <!--wa Info Tabs-->
-                        <div class="wa-info-tabs">
-                            <!--wa Tabs-->
-                            <div class="wa-tabs category-tab" id="wa-tabs1">
-                                <!--Tab Btns-->
-                                <div class="wv_tab_btns clearfix">
-
-                                    <a href="#wa-latest1" class="mens_btn tab-btn wv_tbtn">Sản Phẩm Mới</a>
-                                    <a href="#wa-best1" class="mens_btn tab-btn wv_tbtn">Bán Chạy</a>
-                                    <a href="#wa-popular1" class="mens_btn tab-btn wv_tbtn">Phổ Biến</a>
-                                    
-                                </div>
-                                <!--Tabs Container-->
-                                <div class="tabs-container wv_tabs_container">
-                                    <div class="row">
-                                        <!--Tab first Content item Start-->
-                                        <div class="tab active-tab mens_tab" id="wa-accessories1">
-                                            <div class="owl-carousel-style1" id="men-carousel">
-                                                 @foreach($products_houseware as $product)
-                                        <div class="wa-item">
-                                            <div class="col-md-12">
-                                                <div class="wa-theme-design-block">
-                                                    <figure class="dark-theme">
-                                                        <img src="{{$product->image_link}}" alt="Women Thumbnail">
-                                                        <span class="block-sticker-tag1">
-                                                                   {{--  <form method="POST" action="{{url('cart')}}">
-                                                                        <input type="hidden" name="product_id" value="{{$product->id}}">
-                                                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                                        <button type="submit" class="off_tag btn btn-fefault add-to-cart">
-                                                                            <i class="fa fa-shopping-basket"></i>
-
-                                                                        </button>
-                                                                    </form> --}}
-                                                                    <a class="off_tag" href="javascript:;" onclick="addToCart({{$product->id}})"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></a>
-                                                                </span> 
-                                                                <span class="block-sticker-tag2">                                      
-                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                </span>
-                                                                <span class="block-sticker-tag3">
-                                                                    <a href="javascript:;" onclick="showProduct({{$product->id}})" class="off_tag2"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></a>
-                                                                </span>
-                                                            </figure>
-                                                            <div class="block-caption1">
-                                                                <h4>{{$product->name}}</h4>
-                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                    <span class="price-text-color ">{{$product->supplier->name}}</span>
-                                                                </div>
-                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                    <ul class="wv_rating">
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><span class="review">1 review</span></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                                <div class="price col-md-12">
-                                                                    <span class="sell-price">{{number_format($product->price)}}</span>
-                                                                    <span class="actual-price">{{number_format($product->price_discount)}}</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                @endforeach
-                                            </div>
-                                        </div>
-                                        <!--Tab first Content item End-->
-                                        <!--Tab second Content item Start-->
-                                        <div class="tab mens_tab" id="wa-latest1">
-                                            <div class="owl-carousel-style1" id="men-latest">
-                                                  @foreach($products_houseware as $product)
-                                        <div class="wa-item">
-                                            <div class="col-md-12">
-                                                <div class="wa-theme-design-block">
-                                                    <figure class="dark-theme">
-                                                        <img src="{{$product->image_link}}" alt="Women Thumbnail">
-                                                        <span class="block-sticker-tag1">
-                                                                   {{--  <form method="POST" action="{{url('cart')}}">
-                                                                        <input type="hidden" name="product_id" value="{{$product->id}}">
-                                                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                                        <button type="submit" class="off_tag btn btn-fefault add-to-cart">
-                                                                            <i class="fa fa-shopping-basket"></i>
-
-                                                                        </button>
-                                                                    </form> --}}
-                                                                    <a class="off_tag" href="javascript:;" onclick="addToCart({{$product->id}})"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></a>
-                                                                </span> 
-                                                                <span class="block-sticker-tag2">                                      
-                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                </span>
-                                                                <span class="block-sticker-tag3">
-                                                                    <a href="javascript:;" onclick="showProduct({{$product->id}})" class="off_tag2"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></a>
-                                                                </span>
-                                                            </figure>
-                                                            <div class="block-caption1">
-                                                                <h4>{{$product->name}}</h4>
-                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                    <span class="price-text-color ">{{$product->supplier->name}}</span>
-                                                                </div>
-                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                    <ul class="wv_rating">
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><span class="review">1 review</span></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                                <div class="price col-md-12">
-                                                                    <span class="sell-price">{{number_format($product->price)}}</span>
-                                                                    <span class="actual-price">{{number_format($product->price_discount)}}</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                @endforeach
-                                            </div>
-                                        </div>
-                                        <!--Tab second Content item End-->
-                                        <!--Tab third Content item Start-->
-                                        <div class="tab mens_tab" id="wa-best1">
-                                            <div class="owl-carousel-style1" id="men-best">
-                                                  @foreach($products_houseware_best as $product)
-                                        <div class="wa-item">
-                                            <div class="col-md-12">
-                                                <div class="wa-theme-design-block">
-                                                    <figure class="dark-theme">
-                                                        <img src="{{$product->image_link}}" alt="Women Thumbnail">
-                                                        <span class="block-sticker-tag1">
-                                                                   {{--  <form method="POST" action="{{url('cart')}}">
-                                                                        <input type="hidden" name="product_id" value="{{$product->id}}">
-                                                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                                        <button type="submit" class="off_tag btn btn-fefault add-to-cart">
-                                                                            <i class="fa fa-shopping-basket"></i>
-
-                                                                        </button>
-                                                                    </form> --}}
-                                                                    <a class="off_tag" href="javascript:;" onclick="addToCart({{$product->id}})"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></a>
-                                                                </span> 
-                                                                <span class="block-sticker-tag2">                                      
-                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                </span>
-                                                                <span class="block-sticker-tag3">
-                                                                    <a href="javascript:;" onclick="showProduct({{$product->id}})" class="off_tag2"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></a>
-                                                                </span>
-                                                            </figure>
-                                                            <div class="block-caption1">
-                                                                <h4>{{$product->name}}</h4>
-                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                    <span class="price-text-color ">{{$product->supplier->name}}</span>
-                                                                </div>
-                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                    <ul class="wv_rating">
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><span class="review">1 review</span></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                                <div class="price col-md-12">
-                                                                    <span class="sell-price">{{number_format($product->price)}}</span>
-                                                                    <span class="actual-price">{{number_format($product->price_discount)}}</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                @endforeach
-                                            </div>
-                                        </div>
-                                        <!--Tab third Content item End-->
-                                        <!--Tab forth Content item Start-->
-                                        <div class="tab mens_tab" id="wa-popular1">
-                                            <div class="owl-carousel-style1" id="men-popular">
-                                                 @foreach($products_houseware_popular as $product)
-                                        <div class="wa-item">
-                                            <div class="col-md-12">
-                                                <div class="wa-theme-design-block">
-                                                    <figure class="dark-theme">
-                                                        <img src="{{$product->image_link}}" alt="Women Thumbnail">
-                                                        <span class="block-sticker-tag1">
-                                                                   {{--  <form method="POST" action="{{url('cart')}}">
-                                                                        <input type="hidden" name="product_id" value="{{$product->id}}">
-                                                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                                        <button type="submit" class="off_tag btn btn-fefault add-to-cart">
-                                                                            <i class="fa fa-shopping-basket"></i>
-
-                                                                        </button>
-                                                                    </form> --}}
-                                                                    <a class="off_tag" href="javascript:;" onclick="addToCart({{$product->id}})"><strong><i class="fa fa-shopping-basket" aria-hidden="true"></i></strong></a>
-                                                                </span> 
-                                                                <span class="block-sticker-tag2">                                      
-                                                                    <span class="off_tag1"><strong><i class="fa fa-heart-o" aria-hidden="true"></i></strong></span>
-                                                                </span>
-                                                                <span class="block-sticker-tag3">
-                                                                    <a href="javascript:;" onclick="showProduct({{$product->id}})" class="off_tag2"><strong><i class="fa fa-eye" aria-hidden="true"></i></strong></a>
-                                                                </span>
-                                                            </figure>
-                                                            <div class="block-caption1">
-                                                                <h4>{{$product->name}}</h4>
-                                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                                    <span class="price-text-color ">{{$product->supplier->name}}</span>
-                                                                </div>
-                                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                                    <ul class="wv_rating">
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><i class="fa fa-star"></i></li>
-                                                                        <li><span class="review">1 review</span></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                                <div class="price col-md-12">
-                                                                    <span class="sell-price">{{number_format($product->price)}}</span>
-                                                                    <span class="actual-price">{{number_format($product->price_discount)}}</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                @endforeach
-                                            </div>
-                                        </div>
-                                        <!--Tab forth Content item End-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+     
         <!--//==Men Section End==//-->  
         <section class="accessories-add">
             <div class="container">
@@ -1135,6 +884,7 @@
                 }
             });
 
+          
          }
      </script>
      @endsection

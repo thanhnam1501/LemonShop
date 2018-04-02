@@ -64,7 +64,7 @@
 			</button>
 
 			<div class="navbar-header pull-left">
-				<a href="index.html" class="navbar-brand">
+				<a href="{{route('admin.dashboard')}}" class="navbar-brand">
 					<small>
 						<i class="fa fa-leaf"></i>
 						Lemon Shop
@@ -411,7 +411,7 @@
 
 			<ul class="nav nav-list">
 				<li class="active">
-					<a href="index.html">
+					<a href="{{route('admin.dashboard')}}">
 						<i class="menu-icon fa fa-tachometer"></i>
 						<span class="menu-text"> Dashboard </span>
 					</a>
@@ -481,7 +481,7 @@
 					</ul>
 				</li>
 
-				<li class="">
+				{{-- <li class="">
 					<a href="#" class="dropdown-toggle">
 						<i class="menu-icon fa fa-list"></i>
 						<span class="menu-text"> Phản Hồi </span>
@@ -510,7 +510,7 @@
 							<b class="arrow"></b>
 						</li>
 					</ul>
-				</li>
+				</li> --}}
 
 				<li class="">
 					<a href="#" class="dropdown-toggle">

@@ -40,19 +40,20 @@
                         </tr>
                     </thead>
                     <tbody>
-                       @foreach($cart as $item)
-                       <tr id="cart_{{$item->id}}">
+                     @foreach($cart as $item)
+                     <tr id="cart_{{$item->id}}">
                         <td><a href="#"><img src="{{ $item->image_link}}" alt=""></a></td>
                         <td class="cart-product-title"><a href="#">{{$item->name}}</a></td>
                         <td class="cart-product-price"><span>{{ number_format($item->price)}} VNĐ</span></td>
                         <td class="p-qty">
-                            <form action="" method="POST">
-                              <input class="quantity_field" value="{{$item->qty}}" type="number" min="1" max="20" step="1" data-min="1"/>
-                          </form>
-
-                      </td>
-                      <td class="cart-product-price"><span>{{ number_format($item->subtotal)}} VNĐ</span></td>
-                      <td class="delete-products">
+                            <a class="increase-qty"  data-id="{{$item->rowId}}" "><button>+</button></a>
+                            <li id="qty-{{$item->rowId}}"  style="width: 50px !important;margin-left:10px !important;margin-right:10px !important" class="quantity_field" value="{{$item->qty}}" type="text">
+                             {{$item->qty}}
+                         </li>
+                         <a class="reduced-qty"  data-id="{{$item->rowId}}" "><button>-</button></a>
+                     </td>
+                     <td class="cart-product-price "><span id="price-{{$item->rowId}}">{{ number_format($item->subtotal)}} VNĐ</span></td>
+                     <td class="delete-products">
                         <a href="javascript:;" onclick="removeCart({{$item->id}})" class="btn_remove" data-rel="tooltip" title="Delete">
                             <i class="fa fa-times"></i>
                         </a>
@@ -251,55 +252,113 @@
         <!--//==partner Section End==//-->
         <!--//=======Footer Start=======//-->
         @endsection 
-       @section('script')
-        <script type="text/javascript">
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        @section('script')
+        <script>
+         $(".increase-qty").click(function() {
+          //  ret = DetailsView.GetProject($(this).attr("#data-id"), OnComplete, OnTimeOut, OnError);
+          var rowId = $(this).attr("data-id");
+
+          $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+          $.ajax({
+            url: '{{route( 'add.qty')}}',
+            type: 'POST',
+            dataType: 'JSON',
+            data: {rowId: rowId},
+            success:function(res){
+                var data = res.data;
+                var price = res.price;
+                $('#qty-' + rowId).html(data.qty);
+                $('#price-' + rowId).html(price);
+                toastr.success('Đã thêm 1 sản phẩm !');
+            }
+        });
+      });
+         $(".reduced-qty").click(function() {
+          //  ret = DetailsView.GetProject($(this).attr("#data-id"), OnComplete, OnTimeOut, OnError);
+          var rowId = $(this).attr("data-id");
+
+          $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+          $.ajax({
+            url: '{{route( 'minus.qty')}}',
+            type: 'POST',
+            dataType: 'JSON',
+            data: {rowId: rowId},
+            success:function(res){
+                var data = res.data;
+                var price = res.price;
+                console.log(data.qty);
+                if(data.qty > 1){
+                    $('#qty-' + rowId).html(data.qty);
+                    $('#price-' + rowId).html(price);
+                    toastr.warning('Đã giảm 1 sản phẩm !');
+                }else if(data.qty==1){
+                    console.log(data.subtotal);
+                     $('#qty-' + rowId).html(data.qty);
+                      $('#price-' + rowId).html(price);
+                   toastr.warning('Tối thiểu 1 sản phẩm !');
+               }
+           }
+       });
+      });
+
+  </script>
+  <script type="text/javascript">
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    function removeCart(id){
+        $('.btn_remove').click(function(){
+            swal({
+                title: "Bạn có chắc xóa sản phẩm này khỏi giỏ hàng?",
+                text: "Bạn sẽ không thể khôi phục lại bản ghi này !",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                cancelButtonText: "Không",
+                confirmButtonText: "Có",
+                closeOnConfirm: true,
+            },
+            function(isConfirm){
+                if (isConfirm) {
+                    $.ajax({
+                        url: '{{ route('remove.cart') }}',
+                        type: 'POST',
+                        data: {id: id},
+
+                        success : function(res) {
+                            if (res.status) {
+                              var data = res.data;
+                              console.log(data);
+                              var subtotal = res.subtotal;
+                              $('#cart_'+id).remove();
+                              $('#subtotal').html(subtotal);
+                              $('#total').html(subtotal);
+
+                              toastr.success('Xoá thành công!', '',{timeOut: 1000});
+                          }
+                      },
+                      error: function(xhr, ajaxOptions, thrownError,) {
+                        toastr.error('Xoá thất bại!', '',{timeOut: 1000});
+                    }
+                });
+
+                }else{
+                    toastr.error('Thao tác bị huỷ!', '',{timeOut: 1000});
                 }
             });
-            function removeCart(id){
-                $('.btn_remove').click(function(){
-                    swal({
-                        title: "Bạn có chắc xóa sản phẩm này khỏi giỏ hàng?",
-                        text: "Bạn sẽ không thể khôi phục lại bản ghi này !",
-                        type: "warning",
-                        showCancelButton: true,
-                        confirmButtonColor: "#DD6B55",
-                        cancelButtonText: "Không",
-                        confirmButtonText: "Có",
-                        closeOnConfirm: true,
-                    },
-                    function(isConfirm){
-                        if (isConfirm) {
-                            $.ajax({
-                                url: '{{ route('remove.cart') }}',
-                                type: 'POST',
-                                data: {id: id},
 
-                                success : function(res) {
-                                    if (res.status) {
-                                      var data = res.data;
-                                      var subtotal = res.subtotal;
-                                      $('#cart_'+id).remove();
-                                      $('#subtotal').html(subtotal);
-                                      $('#total').html(subtotal);
+        });
+    }
 
-                                      toastr.success('Xoá thành công!', '',{timeOut: 1000});
-                                  }
-                              },
-                              error: function(xhr, ajaxOptions, thrownError,) {
-                                toastr.error('Xoá thất bại!', '',{timeOut: 1000});
-                            }
-                        });
-
-                        }else{
-                            toastr.error('Thao tác bị huỷ!', '',{timeOut: 1000});
-                        }
-                    });
-
-                });
-            }
-
-        </script>
+</script>
 @endsection

@@ -84,13 +84,38 @@
 	<tr>
 		<td>
 
-			<div>
+			<div class="col-sm-4">
+				<div class="widget-box">
+					<div class="widget-header">
+						<h4 class="widget-title">Ảnh sản phẩm</h4>
+					</div>
+					<div class="widget-body">
+						<img src="/{{$products->image_link}}" alt="">
+					</div>
+				</div>
+			</div>
 
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+
+			<div class="col-sm-6">
 				<h4>Danh mục sản phẩm</h4>
 				<select name="catalog_id">
 					<option value="{{$products->catalog_id}}" class="active">{{$products->catalog_name}}</option>
 					@foreach($catalogs as $catalog)
 					<option value="{{$catalog->id}}">{{$catalog ->name}}</option>
+					@endforeach
+				</select>
+
+			</div>
+			<div class="col-sm-6">
+				<h4>Nhà Cung Cấp</h4>
+				<select name="supplier_id">
+					@foreach($suppliers as $supplier)
+					<option value="{{$supplier->id}}">{{$supplier->name}}</option>
 					@endforeach
 				</select>
 

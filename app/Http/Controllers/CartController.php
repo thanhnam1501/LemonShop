@@ -6,14 +6,20 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use App\Product;
 use App\Catalog;
+use App\Supplier;
 use App\City;
+use App\Customer;
+use App\Bill;
+use App\Bill_detail;
 use Gloudemans\Shoppingcart\Facades\Cart;
+use App\Http\Controllers\Validator;
 class CartController extends Controller
 {
     public function cart(){
         $cart = Cart::content();
         $catalogs = Catalog::get();
-        return view('shopping-cart', ['cart' => $cart, 'catalogs' => $catalogs] );
+        $suppliers = Supplier::get();
+        return view('shopping-cart', ['cart' => $cart, 'catalogs' => $catalogs,'suppliers' => $suppliers,] );
     }
 
     public function addToCart(Request $request){
@@ -27,9 +33,10 @@ class CartController extends Controller
  }
  public function cart_remove(Request $request){
     $id = $request->get('id');
-     $rows = Cart::search(function($key, $id) {
-                return $key->id;
-            });
+
+    $rows = Cart::search(function($key, $id) {
+        return $key->id;
+    });
     $rowId = $rows->where('id', $id)->first()->rowId;
     Cart::remove($rowId);
     $subtotal = Cart::subtotal();
@@ -38,125 +45,82 @@ class CartController extends Controller
         'data' => $rowId,
         'subtotal' => $subtotal,
     ]);
- }
+}
 
 public function getCheckOut() {
     $data = Cart::content();
     $catalogs = Catalog::get();
+    $suppliers = Supplier::get();
     $city = City::get();
-
     return view('checkout',[
         'catalogs' => $catalogs,
-         'data' => $data,
-         'city' => $city,
-     ]);
+        'suppliers' => $suppliers,
+        'data' => $data,
+        'city' => $city,
+    ]);
 }
 
 public function postCheckOut(Request $request){
     $data = $request->all();
-    dd($data);
+    
+    $customer = Customer::create($data);
+    $data['note'] = null;
+    $bill = array();
+    $bill['customer_id'] = $customer['id'];
+    $bill['total'] = Cart::subtotal();
+    $bill['note'] = $data['note'];
+
+    $bill = Bill::create($bill);
+    $cart = Cart::content();
+    if (count($cart) >0) {
+        foreach ($cart as $key => $item) {
+            $billDetail = new Bill_detail;
+            $billDetail->bill_id = $bill->id;
+            $billDetail->product_id = $item->id;
+            $billDetail->quantily = $item->qty;
+            $billDetail->price = $item->price;
+            $billDetail->save();
+        }
+    }
+    $catalogs = Catalog::get();
+    $suppliers = Supplier::get();
+    return view('thank', [  'catalogs' => $catalogs, 'suppliers' => $suppliers,
+]);
+    
 }
 
-//     public function cart()
-//     {
-//      if (Request::isMethod('post')) {
-//         $this->data['title'] = 'Giỏ hàng của bạn';
-//         $product_id = Request::get('product_id');
-//         $product = Product::find($product_id);
-//         $cartInfo = [
-//             'id' => $product_id,
-//             'name' => $product->name,
-//             'price' => $product->price,
-//             'qty' => '1'
-//         ];
-//         Cart::add($cartInfo);
-//     }
-
-//          //increment the quantity
-//     if (Request::get('product_id') && (Request::get('increment')) == 1) {
-//         $rows = Cart::search(function($key, $value) {
-//             return $key->id == Request::get('product_id');
-//         });
-//         $item = $rows->first();
-//         Cart::update($item->rowId, $item->qty + 1);
-//     }
-
-//         //decrease the quantity
-//     if (Request::get('product_id') && (Request::get('decrease')) == 1) {
-//         $rows = Cart::search(function($key, $value) {
-//             return $key->id == Request::get('product_id');
-//         });
-//         $item = $rows->first();
-//         Cart::update($item->rowId, $item->qty - 1);
-//     }
-
-
-//   $cart = Cart::content();
-//   $this->data['cart'] = $cart;
-//   return view('shopping-cart', $this->data);
-
-// }
-
-
-
-// public function getCheckOut() {
-//     $this->data['title'] = 'Check out';
-//     $this->data['cart'] = Cart::content();
-//     $this->data['total'] = Cart::total();
-//     return view('checkout', $this->data);
-// }
-
-// public function postCheckOut(Request $request) {
-//     $cartInfor = Cart::content();
-//         // validate
-//     $rule = [
-//         'fullName' => 'required',
-//         'email' => 'required|email',
-//         'address' => 'required',
-//         'phoneNumber' => 'required|digits_between:10,12'
-
-//     ];
-
-//     $validator = Validator::make(Input::all(), $rule);
-
-//     if ($validator->fails()) {
-//         return redirect('/checkout')
-//         ->withErrors($validator)
-//         ->withInput();
-//     }
-
-//     try {
-//             // save
-//         $customer = new Customer;
-//         $customer->name = Request::get('fullName');
-//         $customer->email = Request::get('email');
-//         $customer->address = Request::get('address');
-//         $customer->phone_number = Request::get('phoneNumber');
-//             //$customer->note = $request->note;
-//         $customer->save();
-
-//         $bill = new Bill;
-//         $bill->customer_id = $customer->id;
-//         $bill->date_order = date('Y-m-d H:i:s');
-//         $bill->total = str_replace(',', '', Cart::total());
-//         $bill->note = Request::get('note');
-//         $bill->save();
-
-//         if (count($cartInfor) >0) {
-//             foreach ($cartInfor as $key => $item) {
-//                 $billDetail = new BillDetail;
-//                 $billDetail->bill_id = $bill->id;
-//                 $billDetail->product_id = $item->id;
-//                 $billDetail->quantily = $item->qty;
-//                 $billDetail->price = $item->price;
-//                 $billDetail->save();
-//             }
-//         }
-//           // del
-//         Cart::destroy();
-
-//     } catch (Exception $e) {
-//         echo $e->getMessage();
-//     }
-// }
+public function addqty(Request $request){
+    $order = Cart::get($request->rowId); 
+    $rows = Cart::update($request->rowId, $order->qty +1);
+    $price =number_format(Cart::get($request->rowId)->subtotal)." VNĐ" ;
+    return Response()->json([
+        'status' => true,
+        'data' => $rows,
+        'price' => $price,
+    ]);
 }
+
+public function minusqty(Request $request){
+    $rowId = $request->get('rowId');
+    $qty = Cart::get($rowId)->qty;
+    if($qty > 1){
+        $qty = $qty - 1;
+       $rows = Cart::update($rowId, $qty);
+       $price =number_format(Cart::get($rowId)->subtotal)." VNĐ" ;
+       return Response()->json([
+        'status' => true,
+        'data' => $rows,
+        'price' => $price,
+    ]);
+   }else if($qty == 1){
+     $rows = Cart::get($rowId);
+        $price = number_format(Cart::get($rowId)->subtotal)." VNĐ" ;
+     return Response()->json([
+        'status' => true,
+        'data' => $rows,
+        'price' => $price,
+          ]);
+   } 
+}
+}
+

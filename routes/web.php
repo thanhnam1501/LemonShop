@@ -90,8 +90,12 @@ Route::get('test', function(){
 });
 Route::post('thong-tin-san-pham', 'HomeController@homeShowProduct')->name('home.show.product');
 Route::get('danh-muc/{slug}', 'HomeController@getProductByCatalog')->name('home.show.product.by.catalog');
+Route::get('nha-cung-cap/{slug}', 'HomeController@getProductBySupplier')->name('home.show.product.by.supplier');
 Route::get('/cart', 'CartController@cart')->name('shopping.cart');
 Route::post('/cart-add', 'CartController@addToCart')->name('add.to.cart');
+Route::post('/qty-add', 'CartController@addqty')->name('add.qty');
+Route::post('/qty-minus', 'CartController@minusqty')->name('minus.qty');
+
 Route::post('/cart-remove/', 'CartController@cart_remove')->name('remove.cart');
 Auth::routes();
 Route::get('/login', 'Auth\LoginController@showLoginForm')->name('get.user.login');

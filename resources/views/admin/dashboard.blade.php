@@ -3,5 +3,5 @@
 @endsection
 
 @section('script')
-
+	
 @endsection

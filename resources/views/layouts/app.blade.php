@@ -76,7 +76,7 @@
                                     </li>
                                     @if(null !== Auth::user())
                                         <li>
-                                            {{Auth::user()->name}}
+                                           <h4> {{Auth::user()->name}}</h4>
                                         </li>
                                     @endif
                               </ul>
@@ -231,47 +231,22 @@
                                             </li>
                                             <!-- Pages Menu Ends -->
                                             <!--Menu -->
-                                            <li>
-                                                <a href="#">Nhà Cung Cấp<span class="caret menu-arrow"></span></a> 
-                                                <!--  Dropdown Menu -->
+                                              <li class="mega-menu">
+                                                <a href="">Nhà Cung Cấp <span class="caret menu-arrow"></span></a>
                                                 <ul class="dropdown-menu wv_menu_color">
-                                                    <!--  Grid Block -->
                                                     <li>
-                                                        <a href="#">Categoty</a>
-                                                        <ul class="dropdown-menu">
-                                                            <li>
-                                                                <a href="shop-left-sidebar.html">category left Sidebar</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shop-right-sidebar.html">category right Sidebar</a>
-                                                            </li>
-                                                        </ul>
+                                                        <!-- Home Mage Menu grids Begins -->
+                                                        <div class="row">
+                                                            <!-- Home Variation 1 Block -->
+                                                            @foreach($suppliers as $supplier)
+                                                            <div class="col-sm-3 page-links">
+                                                               <div>
+                                                                <a href="{{route('home.show.product.by.supplier',$supplier->slug)}}">{{$supplier->name}}</a>
+                                                            </div>
+                                                        </div>
+                                                        @endforeach
+                                                        
                                                     </li>
-                                                    <!-- Ends  Grid Block -->
-                                                    <li>
-                                                        <a href="#">Categoty list</a>
-                                                        <ul class="dropdown-menu wv_menu_color">
-                                                            <li>
-                                                                <a href="shop-list-left-sidebar.html">list left Sidebar</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shop-list-right-sidebar.html">list right Sidebar</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <!-- Ends  Grid Block -->
-                                                    <li>
-                                                        <a href="#">Shop single</a>
-                                                        <ul class="dropdown-menu wv_menu_color">
-                                                            <li>
-                                                                <a href="shop-single-left-sidebar.html">Shop Sidebar</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="shop-single.html">Shop fullwidth</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <!-- Ends Grid Block -->
                                                 </ul>
                                             </li>
                                             <!-- Blog Menu -->
@@ -432,114 +407,7 @@
             </div>
         </footer>
         <!--//=======Footer End=======//--> 
-        <div id="quickView" class="modal quickView" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <button type="button" class="close-modal" data-dismiss="modal">×</button>
-                    <div class="modal-body">
-                        <div class="quick-view-container">
-                            <!--//==Product Item Start==//-->
-                            <div class="col-md-12 col-sm-12">
-                                <div class="wa-theme-design-block">
-                                    <div class="col-md-6 wv_list_img">
-                                        <div class="item_left_slider product--image">
-                                            <div class="single_display_image"> 
-                                                <img class="display-img" alt="" id="image-link-quickView" /> 
-                                            </div>
-                                            {{-- <div class="icon-images"> 
-                                                <a href="img/product/product1.jpg"> 
-                                                    <img src="img/product/small_product1.jpg" alt="small_product1"/></a> 
-                                                    <a href="img/product/product2.jpg"> <img src="img/product/small_product2.jpg" alt="small_product2"/></a> 
-                                                    <a href="img/product/product1.jpg"> <img src="img/product/small_product1.jpg" alt="small_product3"/></a> 
-                                                    <a href="img/product/product2.jpg"> <img src="img/product/small_product2.jpg" alt="small_product4"/></a>
-                                                </div> --}}
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 wv_list_text wv_single_text">
-                                            <div class="block-caption1 wv_single_heading">
-                                                <h5 class="responsive_single_title" id="namequickView"></h5>
-                                                <div class="col-xs-4 col-sm-4 col-md-6 text_left">
-                                                    <span class="price-text-color " id="catalog-name-quickView"></span>
-                                                </div>
-                                                <div class="col-xs-8 col-sm-8 col-md-6 review_right">
-                                                    <ul class="wv_rating">
-                                                        <li><i class="fa fa-star"></i></li>
-                                                        <li><i class="fa fa-star"></i></li>
-                                                        <li><i class="fa fa-star"></i></li>
-                                                        <li><i class="fa fa-star"></i></li>
-                                                        <li><i class="fa fa-star"></i></li>
-                                                        <li><span class="review">1 review</span></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="clear"></div>
-                                                <div class="price list_price col-md-12">
-                                                    <span class="sell-price" id="price-quickView"></span>
-                                                    <span class="actual-price" id="price-discount-quickView"></span>
-                                                    <h5>Mô tả ngắn:</h5>
-                                                    <p id="sort-content-quickView"></p>
-                                                    <div class="single_specification">
-                                                        <div class="col-xs-3 col-md-3 single_color_left">
-                                                            <h5>Nhà cung cấp:</h5>
-                                                        </div>
-                                                        <div class="col-xs-9 col-md-9 single_color_right wv_widget">
-                                                            <span id="supplier-name-quickView"></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                    <div class="single_specification">
-                                                        <div class="col-xs-3 col-md-3 single_size_left">
-                                                            <h4>Size:</h4>
-                                                        </div>
-                                                        <div class="col-xs-9 col-md-9 single_color_right wv_widget">
-                                                            <ul class="wv_size">
-                                                                <li><a href="#">xs</a></li>
-                                                                <li><a href="#">s</a></li>
-                                                                <li><a href="#">m</a></li>
-                                                                <li><a href="#">l</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                    <div class="show-item wv_grid_right wv_single_numproduct">
-                                                        <div class="box-option responsive_box">
-                                                            <select>
-                                                                <option>12</option>
-                                                                <option>18</option>
-                                                                <option>24</option>
-                                                            </select>
-                                                            <span class="icon"></span>
-                                                        </div>
-                                                    </div>
-                                                    <ul class="shop_list_icon wv_single_icon">
-                                                        <li><a href="">ADD TO CART</a></li>
-                                                        <li><a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
-                                                    </ul>
-                                                    <div class="single_specification specification_social">
-                                                        <div class="col-xs-3 col-md-3 single_social_left">
-                                                            <h4>Share:</h4>
-                                                        </div>
-                                                        <div class="col-xs-9 col-md-9 single_color_right wv_widget">
-                                                            <ul class="wv_single_social">
-                                                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <!--//==Product Item End==//-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    
             <div class="modal_backdrop"></div>
             <!-- Switcher Section Start -->
             <div id="style-switcher">
